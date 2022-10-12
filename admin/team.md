@@ -1,5 +1,7 @@
 # Team Name and Logo/Theme
 
+# Team Values
+
 # Team Roster
 
 **Name:** Mandeep Chera
