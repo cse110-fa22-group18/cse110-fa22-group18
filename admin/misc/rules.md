@@ -1,6 +1,6 @@
-# Team Rules Agreement
+# Team Working Agreement
 ### CSE 110 Fall 2022
-### Creation: 10/12/2022
+### Creation Date: 10/12/2022
 
 # Team
 **Instructor:** Thomas Powell  
@@ -26,7 +26,7 @@
 
 # Meeting Scheduling
 
-# General Responsibilities
+# General Responsibilities and Expectations
 
 # Conflict Resolution Policy
 
