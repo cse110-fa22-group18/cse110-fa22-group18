@@ -3,9 +3,9 @@
 ### Creation: 10/12/2022
 
 # Team
-**Instructor:** Thomas Powell
-**TA Guide:** Shubham Kumar
-**Team Name:** Team 18: 
+**Instructor:** Thomas Powell  
+**TA Guide:** Shubham Kumar  
+**Team Name:** Team 18:  
 
 # Team Member Contact Information
 
