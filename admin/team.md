@@ -2,10 +2,12 @@
 
 # Team Roster
 
-### Name:
+**Name:**
 
 **Overview:**
 
 **Github Page:** [Github link]()
+
+<br>
 
 
