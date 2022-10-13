@@ -29,11 +29,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Nathan Karter
 
-**Overview:**
+**Overview:** What's up? I'm a 3rd year Math-CS major. I honestly have no idea yet what I'm interested but that's why I'm taking a bunch of different courses at school. I want to learn how to properly create software in a team environment, which makes me really excited for this project. Overall, I'm not too experienced with this however, so this might be quite the challenge. Outside of school, I like watching baseball and playing Smash Bros.
 
-**[Github Page]()**
+**[Github Page](https://github.com/nkarter02)**
 
 ##
 
