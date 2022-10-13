@@ -12,11 +12,11 @@
 
 ##
 
-**Name:**
+**Name:** Ira Hanabusa
 
-**Overview:**
+**Overview:** Hello! I am a 3rd year Computer Engineering major at ERC. I enjoy the outdoors and playing videogames both solo and with friends. I have primarily used Java, C, and C++ up to this point. I don't have much webdev or project experience besides making a simple website in highschool, but I plan to get used all sorts of tools throughout this course.
 
-**[Github Page]()**
+**[Github Page](https://github.com/ihanabus)**
 
 ##
 
