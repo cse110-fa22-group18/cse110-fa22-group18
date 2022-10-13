@@ -24,7 +24,11 @@
 
 # Communication Expectations
 
+We will be primarily communicating through Slack, Zoom, and Email. All team members are required to answer any and all relevant messages within the day it is sent. During meetings, each member must respectfully and actively listen to others, while also providing effective and appropriate ideas. If you feel like something is wrong, tell the group or team member in a respectful way.
+
 # Meeting Scheduling
+
+Team meetings will be scheduled according to the when2meet posted each week, which could possibly be discussed on Slack. In the event that there is no time slot where everyone is free, prepare to open up your schedule where you can, as every meeting for this class is very important and must be attended. If you miss a meeting, you are responsible for catching up on what happened in the meeting through the team leads and the corresponding meeting minutes.
 
 # General Responsibilities and Expectations
 
