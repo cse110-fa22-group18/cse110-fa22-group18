@@ -20,11 +20,12 @@
 
 ##
 
-**Name:**
+**Name:** Yiyu Weng
 
-**Overview:**
+**Overview:** 👋Hi! I am a 3rd year Math-cs major and Psychology minor student.👀I am interested in machine learning, ios app development, and web development. 🌱 I am currently learning more about front end, HTML, CSS, and JavaScript. 🍳 I enjoy cooking. I spend my free time with my friends and cats!
+This is my first time to work with a big team, I hope I can gain more experience about team work!
 
-**[Github Page]()**
+**[Github Page](https://github.com/yyWeng)**
 
 ##
 
