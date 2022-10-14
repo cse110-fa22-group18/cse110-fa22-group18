@@ -37,11 +37,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Jiayi Guan
 
-**Overview:**
+**Overview:** Hi, I'm a 4th year Math-CS major student. I'm interested in game development but don't know much about it yet. The programming languages I use are C++, JAVA, C, not so familiar with Python. Currently taking an online web dev bootcamp, but moving slow and still lack experience. I love Kpop, Jpop, and Jrock, also video games, mostly RPG.
 
-**[Github Page]()**
+**[Github Page](https://github.com/JiayiGuan99)**
 
 ##
 
