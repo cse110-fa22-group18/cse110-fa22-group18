@@ -45,11 +45,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Hariz Megat Zariman
 
-**Overview:**
+**Overview:** Hey there! I'm a 3rd year Computer Engineering major and am pretty intereseted in machine learning, web development and software engineering! I'm really looking forward to working in a large team environment. I feel comfortable programming in Python, Java, C/C++ as well as some frameworks like Flask/Django and Node.js! In my free time I like playing golf/fencing and binge-watching tv shows :)
 
-**[Github Page]()**
+**[Github Page](https://github.com/hzariman)**
 
 ##
 
