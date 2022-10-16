@@ -32,6 +32,27 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 
 # General Responsibilities and Expectations
 
+- Meetings
+  - Be flexible with your schedule and attend every meeeting you can
+  - Arrive at meetings on time
+  - Provide updates on your current status and report issues you have encountered or foresee
+  - If you are unable to attend a meeting, get up to speed by contacting team members or reading through the meeting notes
+
+- Communication
+  - Post your daily standups on Slack (weekdays 11 am)
+  - Be attentive to what others say and don't interrupt others
+  - Add your own ideas to the dicussion
+  - Think actively and build upon the ideas of others
+  - If you need help, reach out and ask for assistance from teammates
+
+- Professionalism
+  - Be cordial and courteous
+  - Be open to learning and respect the ideas of others
+  - Aim for productive discourse and promote mutual respect
+  - Step up to the task and don't be afraid to take risks
+  - Own up to mistakes instead of blaming others
+  - Stay on top of work to avoid last minute crams
+
 # Conflict Resolution Policy
 
 Conflicts will be dealt with accordingly in a hierarchical structure. In the event that a problem arises with a teammate or various teammates, first report it to the team leads so they can properly take care of the problem. If that does not work, we discuss the problem with the whole team and try to resolve the conflict from there. If that still doesn't work we take the problem to our TA guide Shubham, who will address the issue accordingly. In the worst case, we take the problem to Professor Powell who will make the ultimate decision in providing us with a conflict resolution. Please note that when a reportable issue does occur, analyze it and make sure it is truly an issue that needs to be brought up for resolution. Maintain respect and honesty throughout the whole process of conflict resolution. As a team it is absolutely crucial that we preserve our strong relationship with each other to better collaborate on the project at hand.
@@ -40,4 +61,5 @@ Conflicts will be dealt with accordingly in a hierarchical structure. In the eve
 
 **By signing below, you agree to the rules discussed in this document.**
 
-**Signature** ___________________________________________ **Date** _______________________
+**Signature** <YOUR NAME HERE>
+**Date** October 16, 2022
