@@ -41,7 +41,7 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 - Communication
   - Post your daily standups on Slack (weekdays 11 am)
   - Be attentive to what others say and don't interrupt others
-  - Add your own ideas to dicussions and start a discussion yourself if necessary
+  - Add your own ideas to discussions and start a discussion yourself if necessary
   - Think actively and build upon the ideas of others
   - If you need help, reach out and ask for assistance from teammates
 
