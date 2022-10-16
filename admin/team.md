@@ -53,11 +53,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Yi Yao
 
-**Overview:**
+**Overview:** Hiiiiii! Here is a senior ECE student at UCSD. This is my second year at UCSD. I am working on Deep learning, Algorithm, and this class also. I have experiment with C++, Java, Python, R, HTML, CSS, Java script and so on. However, I never used any react or vue framework. Feel free text me and I will be answer quick! This is my first time work project with that much people. Happy to work with you all! 
 
-**[Github Page]()**
+**[Github Page](https://github.com/yiy054)**
 
 ##
 
