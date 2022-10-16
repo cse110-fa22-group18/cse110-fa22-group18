@@ -1,3 +1,5 @@
-# cse110-sp21-group18
+# Team Eighteam
 
 **[Team Page](admin/team.md)**
+
+**Project Description:** Will be added soon.
