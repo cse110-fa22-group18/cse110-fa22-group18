@@ -5,7 +5,7 @@
 # Team
 **Instructor:** Thomas Powell  
 **TA Guide:** Shubham Kumar  
-**Team Name:** Team 18:  
+**Team Name:** Team Eighteam
 
 # Team Member Contact Information
 
@@ -37,3 +37,5 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 # Team Member Signature
 
 **By signing below, you agree to the rules discussed in this document.**
+
+**Signature** ___________________________________________ **Date** _______________________
