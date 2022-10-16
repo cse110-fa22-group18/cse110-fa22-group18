@@ -46,10 +46,10 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
   - If you need help, reach out and ask for assistance from teammates
 
 - Professionalism
-  - Be cordial and courteous
-  - Be open to learning and respect the ideas of others
+  - Be cordial and courteous while respecting the ideas of others
+  - Be open to learning new tools and methods
   - Aim for productive discourse and promote mutual respect
-  - Step up to the task and don't be afraid to take risks
+  - Step up to the task and cover for each other
   - Own up to mistakes instead of blaming others
   - Stay on top of work to avoid last minute crams
 
