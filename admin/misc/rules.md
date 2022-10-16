@@ -34,7 +34,7 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 
 - Meetings
   - Be flexible with your schedule and attend every meeeting you can
-  - Arrive at meetings on time
+  - Respect the time of others by arriving on time so the meeting may end on time as well
   - Provide updates on your current status and report issues you have encountered or foresee
   - If you are unable to attend a meeting, get up to speed by contacting team members or reading through the meeting notes
 
