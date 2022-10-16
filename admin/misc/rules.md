@@ -33,7 +33,7 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 # General Responsibilities and Expectations
 
 - Meetings
-  - Be flexible with your schedule and attend every meeeting you can
+  - Be flexible with your schedule and attend every meeting you can
   - Respect the time of others by arriving on time so the meeting may end on time as well
   - Provide updates on your current status and report issues you have encountered or foresee
   - If you are unable to attend a meeting, get up to speed by contacting team members or reading through the meeting notes
@@ -51,7 +51,7 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
   - Aim for productive discourse and promote mutual respect
   - Step up to the task when you feel it suits you but also don't be afraid to take risks
   - Own up to mistakes instead of blaming others
-  - Stay on top of work to avoid last minute crams
+  - Stay on top of work to avoid last minute stress
 
 # Conflict Resolution Policy
 
