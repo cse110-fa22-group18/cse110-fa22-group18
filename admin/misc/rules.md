@@ -34,6 +34,8 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
 
 # Conflict Resolution Policy
 
+Conflicts will be dealt with accordingly in a hierarchical structure. In the event that a problem arises with a teammate or various teammates, first report it to the team leads so they can properly take care of the problem. If that does not work, we discuss the problem with the whole team and try to resolve the conflict from there. If that still doesn't work we take the problem to our TA guide Shubham, who will address the issue accordingly. In the worst case, we take the problem to Professor Powell who will make the ultimate decision in providing us with a conflict resolution. Please note that when a reportable issue does occur, analyze it and make sure it is truly an issue that needs to be brought up for resolution. Maintain respect and honesty throughout the whole process of conflict resolution. As a team it is absolutely crucial that we preserve our strong relationship with each other to better collaborate on the project at hand.
+
 # Team Member Signature
 
 **By signing below, you agree to the rules discussed in this document.**
