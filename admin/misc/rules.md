@@ -49,7 +49,7 @@ Team meetings will be scheduled according to the when2meet posted each week, whi
   - Be cordial and courteous
   - Be open to learning new tools and methods
   - Aim for productive discourse and promote mutual respect
-  - Step up to the task and don't be afraid of taking risks
+  - Step up to the task when you feel it suits you but also don't be afraid of taking risks
   - Own up to mistakes instead of blaming others
   - Stay on top of work to avoid last minute crams
 
