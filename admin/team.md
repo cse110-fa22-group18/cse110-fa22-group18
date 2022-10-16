@@ -1,4 +1,4 @@
-# Team Name and Logo/Theme
+# Team Eighteam and Logo/Theme
 
 # Team Values
 
