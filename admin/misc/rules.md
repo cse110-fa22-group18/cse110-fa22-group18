@@ -62,5 +62,5 @@ Conflicts will be dealt with accordingly in a hierarchical structure. In the eve
 **By signing below, you agree to the rules discussed in this document.**
 
 **Signature**: <YOUR NAME HERE>
-<\br>
+<br/>
 **Date**: October 16, 2022
