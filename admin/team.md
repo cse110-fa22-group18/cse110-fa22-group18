@@ -89,11 +89,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Daniel George 
 
-**Overview:**
+**Overview:** I'm Daniel and I'm a 3rd year Computer Engineering major. I'm interested in computer engineering and robotics. I have some SWE experience through some internships. My favorite language to program in is Python. I don't have much advanced experience with web dev, excluding a small class and project in high school.   
 
-**[Github Page]()**
+**[Github Page](https://github.com/dangeo314))**
 
 
 
