@@ -7,6 +7,11 @@
 - Transparency
 - Be responsible
 - Write quality code
+- Maintain dignity
+- Don’t lie
+- Eat your vegetables
+- Drink water
+- Shower sometimes
 
 # Team Roster
 
