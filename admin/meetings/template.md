@@ -1,11 +1,11 @@
 # Team 18: Eighteam
 
-## \[Meeting Type\] <meeting type>
+## \[Meeting Type\]: <meeting type>
   
 ## Attendance
-Taking notes: <name>
+**Taking notes:** <name>
   
-Roll call
+**Roll call**
 - [ ] Daniel
 - [ ] Mandeep
 - [ ] Danny
@@ -18,8 +18,8 @@ Roll call
 - [ ] Nathan
   
 ## Time and Place
-Time: start to end
-Location: (In-person/Remote) about
+  **Time:** start to end
+  **Location:** (In-person/Remote) details
   
 ## Today's Discussion
 - topic1
