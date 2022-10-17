@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Meeting Type\]: <meeting type>
+## \[Meeting Type\]
   
 ## Attendance
 **Taking notes:** <name>
