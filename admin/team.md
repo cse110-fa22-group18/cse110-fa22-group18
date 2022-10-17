@@ -3,6 +3,10 @@
 ![Team Logo](logo.png)
 
 # Team Values
+- Respect each other
+- Transparency
+- Be responsible
+- Write quality code
 
 # Team Roster
 
