@@ -61,11 +61,11 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
+**Name:** Danny Quang
 
-**Overview:**
+**Overview:** Hello, I am a 3rd year Computer Science major. I am currently still exploring the many fields that make up computer science! So far I have actually been enjoying CSS despite the length of the labs (coincidentally I finessed my way into being webmaster for AIAA, so I have to learn how to maintain websites soon anyways). I like playing waterpolo and swimming, go-karting, anime, trying new restaurants, new sports, learning new aspects about other cultures, gaining new insights/opinions, etc. I look forward to working with y'all!
 
-**[Github Page]()**
+**[Github Page](https://github.com/dquangucsd)**
 
 ##
 
