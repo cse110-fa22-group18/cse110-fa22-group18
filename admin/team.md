@@ -1,5 +1,7 @@
 # Team Eighteam and Logo/Theme
 
+![Team Logo](logo.png)
+
 # Team Values
 
 # Team Roster
