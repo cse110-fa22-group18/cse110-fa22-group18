@@ -18,19 +18,19 @@ Roll call
 - [ ] Nathan
   
 ## Time and Place
-Time: <start> to <end>
-Location: (In-person/Remote) <about>
+Time: start to end
+Location: (In-person/Remote) about
   
 ## Today's Discussion
-- <topic1>
-  - <detail1>
-  - <opinion1>
-- <decision1>
-  - <detail1>
-  - <detail2>
+- topic1
+  - detail1
+  - opinion1
+- decision1
+  - detail1
+  - detail2
   
 ## Action Items
-- <task1>
+- task1
  
 ## For Next Meeting
-- <topic>
+- topic
