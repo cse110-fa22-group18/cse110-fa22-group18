@@ -19,7 +19,7 @@
   
 ## Time and Place
 **Time:** start to end
-<br\>
+<br/>
 **Location:** (In-person/Remote) details
   
 ## Today's Discussion
