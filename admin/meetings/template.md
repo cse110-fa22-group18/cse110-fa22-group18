@@ -19,7 +19,7 @@ Roll call
   
 ## Time and Place
 Time: <start> to <end>
-Location: (In-person/Remote) <details>
+Location: (In-person/Remote) <about>
   
 ## Today's Discussion
 - <topic1>
