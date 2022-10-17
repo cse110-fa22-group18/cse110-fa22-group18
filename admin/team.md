@@ -75,11 +75,12 @@ This is my first time to work with a big team, I hope I can gain more experience
 
 ##
 
-**Name:**
 
-**Overview:**
+**Name:** Timothy Orlov
 
-**[Github Page]()**
+**Overview:** My name is Tim, and I am a 4th year Math-CS major. I have taken classes in C++ and Java, and know a little C and ARM. Outside of class, I've made projects with C#, Python, GO Lang, Javascript, and HTML. I also have some AWS knowledge from getting an AWS Associate Developer certificate. For work, I hope to do more backened work since frontend is quite the nightmare for me. In my spare time, I like to play niche video games that no one has heard of. Hopefully this quarter will go smoothly and working will be easy.
+
+**[Github Page](https://github.com/Wiztim)**
 
 ##
 
