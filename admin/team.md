@@ -1,6 +1,6 @@
-# Team Eighteam and Logo/Theme
+# Team Eighteam
 
-![Team Logo](logo.png)
+![Team Logo](branding/logo.png)
 
 # Team Values
 - Respect each other
