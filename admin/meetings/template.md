@@ -26,6 +26,7 @@
 - topic1
   - detail1
   - opinion1
+  - resolution1
 - decision1
   - detail1
   - detail2
@@ -34,4 +35,4 @@
 - task1
  
 ## For Next Meeting
-- topic
+- topic1
