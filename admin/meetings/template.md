@@ -18,8 +18,9 @@
 - [ ] Nathan
   
 ## Time and Place
-  **Time:** start to end
-  **Location:** (In-person/Remote) details
+**Time:** start to end
+<br\>
+**Location:** (In-person/Remote) details
   
 ## Today's Discussion
 - topic1
