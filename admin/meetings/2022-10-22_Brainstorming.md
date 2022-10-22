@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Meeting Type\]
+## \[Brainstrom]
   
 ## Attendance
 **Taking notes:** <name>
