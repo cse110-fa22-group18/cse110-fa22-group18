@@ -8,9 +8,9 @@
 **Roll call**
 - [ ] Daniel
 - [x] Mandeep
-- [ ] Danny
+- [x] Danny
 - [x] Yi
-- [ ] Tim
+- [x] Tim
 - [ ] Ira
 - [ ] Harris
 - [x] Jiayi
@@ -23,8 +23,10 @@
 **Location:** (In-person) 1042 1West on Geisel Library 
   
 ## Today's Discussion
-- topic1
-  - detail1
+- Discuss Roles
+  - Design:
+  - Dev:
+  - QA:
   - opinion1
   - resolution1
 - decision1
