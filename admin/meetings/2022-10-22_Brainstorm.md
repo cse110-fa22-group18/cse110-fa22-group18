@@ -11,7 +11,7 @@
 - [x] Danny
 - [x] Yi
 - [x] Tim
-- [ ] Ira
+- [x] Ira
 - [ ] Harris
 - [x] Jiayi
 - [x] Yiyu
@@ -24,12 +24,20 @@
   
 ## Today's Discussion
 - Discuss Roles
-  - Design:
-  - Dev:
-  - QA:
-  - opinion1
-  - resolution1
-- decision1
+  - Frontend:
+    - Nathan
+    - Danny
+    - Hariz
+  - Backend:
+    - Daniel
+    - Yiyu
+    - Jiayi
+    - Ira
+  - QA(unit testing):
+    - Manny
+    - Tim
+    - Yi
+- Brainstorm
   - detail1
   - detail2
   
