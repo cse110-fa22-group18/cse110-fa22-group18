@@ -71,6 +71,13 @@
   - download
   - save in "My images"(Data Base)
   - account systems(users can share or comment)
+## Scheduling Calendar app
+  - user login page
+  - calender page
+  - each time block page
+    - different types of events:checkList, reminders, ddl reminders
+    - time
+    - location
   
 ## Action Items
 - Give ideas about project
