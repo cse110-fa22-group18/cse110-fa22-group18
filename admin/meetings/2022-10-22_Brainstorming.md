@@ -9,7 +9,7 @@
 - [ ] Daniel
 - [x] Mandeep
 - [ ] Danny
-- [ ] Yi
+- [x] Yi
 - [ ] Tim
 - [ ] Ira
 - [ ] Harris
@@ -18,9 +18,9 @@
 - [x] Nathan
   
 ## Time and Place
-**Time:** start to end
+**Time:** 10:00AM-12:00AM
 <br/>
-**Location:** (In-person/Remote) details
+**Location:** (In-person) 1042 1West on Geisel Library 
   
 ## Today's Discussion
 - topic1
