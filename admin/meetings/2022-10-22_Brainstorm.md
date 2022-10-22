@@ -1,18 +1,18 @@
 # Team 18: Eighteam
 
-## \[Brainstrom]
+## \[Brainstrom/]
   
 ## Attendance
-**Taking notes:** <name>
+**Taking notes:** <Yiyu>
   
 **Roll call**
-- [ ] Daniel
+- [x] Daniel
 - [x] Mandeep
 - [x] Danny
 - [x] Yi
 - [x] Tim
 - [x] Ira
-- [ ] Harris
+- [x] Harris
 - [x] Jiayi
 - [x] Yiyu
 - [x] Nathan
@@ -38,11 +38,43 @@
     - Tim
     - Yi
 - Brainstorm
-  - detail1
-  - detail2
+  - web app
+  - local first: Do everything offline first
+  - think of users and expection
+  - theme/mood
+  - CURD
+- IDEAS about project:
+  - Social media scheduling app
+  - Scheduling Calendar App
+      - (get data from gradescope )
+      - (feature: users can assign events to other user's calendar)
+  - Interactive event scheduler(Maybe Ai...)
+  - Data Compression
+  - Dino game with leaderboard/Gaming
+  - Online Photoshop
+    - edit: resize, sketch,rotate,...some simple feature
+    - upload: accounts system 
+  - sudoku
+  - Webscraping-> Calender
+- First Choice: Online Photoshop
+- Second Choice: scheduling Calendar app
+##Online photoShop
+  - import
+  - edit
+    - Features here:
+    - resize
+    - rotate
+    - erase 
+    - add stickers 
+    - drawing
+  - download
+  - save in "My images"(Data Base)
+  - account systems(users can share or comment)
   
 ## Action Items
-- task1
+- Give ideas about project
+- Discuss the details about Online Photoshop and draw diagrams 
  
 ## For Next Meeting
 - topic1
+
