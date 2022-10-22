@@ -6,16 +6,16 @@
 **Taking notes:** Mandeep Chera
   
 **Roll call**
-- [ x ] Daniel
-- [ x ] Mandeep
-- [ x ] Danny
-- [ x ] Yi
-- [ x ] Tim
-- [ x ] Ira
-- [ x ] Harriz
-- [ x ] Jiayi
-- [ x ] Yiyu
-- [ x ] Nathan
+- [x] Daniel
+- [x] Mandeep
+- [x] Danny
+- [x] Yi
+- [x] Tim
+- [x] Ira
+- [x] Harriz
+- [x] Jiayi
+- [x] Yiyu
+- [x] Nathan
   
 ## Time and Place
 **Time:** 7:30 PM to 8:10PM
