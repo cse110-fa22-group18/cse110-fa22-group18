@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## Weekly Meeting with Team and TA
+## \[Weekly Meeting with Team and TA\]
   
 ## Attendance
 **Taking notes:** Mandeep Chera
