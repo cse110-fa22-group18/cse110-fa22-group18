@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Brainstrom/]
+## \[Brainstrom\]
   
 ## Attendance
 **Taking notes:** <Yiyu>
