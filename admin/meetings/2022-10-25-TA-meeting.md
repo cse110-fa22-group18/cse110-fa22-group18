@@ -6,7 +6,7 @@
 **Taking notes:** Mandeep Chera
   
 **Roll call**
-- [] Daniel
+- [ ] Daniel
 - [x] Mandeep
 - [x] Danny
 - [x] Yi
