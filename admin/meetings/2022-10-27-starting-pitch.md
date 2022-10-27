@@ -18,7 +18,7 @@
 - [x] Nathan
   
 ## Time and Place
-**Time:** 1:00 PM to end
+**Time:** 1:00 PM to 2:50 PM
 <br/>
 **Location:** (Remote) Zoom
   
@@ -28,15 +28,13 @@
   - Notetaking app: likely the easiest to implement; include features such as font, color, highlight, etc.
   - Calendar event app: easy to make a calendar template; trouble when dealing with overlapping events
   - Photoshop app: start off with basic features like import, upload, cropping, black pen drawing
-- Project pitch
-  - Wireframe: miro
-  - Pitch doc: Google slides
-- decision1
-  - detail1
-  - detail2
-- decision1
-  - detail1
-  - detail2
+- Working documents
+  - Wireframe: [miro](https://miro.com/app/board/uXjVPJ6keiE=/)
+  - Pitch doc: [Google slides](https://docs.google.com/presentation/d/1q8KS2xCeXWq_YlPNWBSierNbPj5OjL3s1aj1RLEkitE/edit#slide=id.g103f25f02dd_0_4402)
+- Photoshop preliminary features
+  - Brightness
+  - Crop
+  - Rotate
   
 ## Action Items
 - task1
