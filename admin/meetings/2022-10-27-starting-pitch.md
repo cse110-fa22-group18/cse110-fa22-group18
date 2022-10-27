@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Meeting Type\]
+## \[Pitch Doc\]
   
 ## Attendance
 **Taking notes:** <name>
@@ -38,7 +38,6 @@
     - Begin editing by selecting an image from the gallery or importing an image from local files
     - Can start from a blank canvas
     - Can delete an image from the gallery
-  - Upload/download/delete/view images
   - Image edit features
     - Brightness
     - Crop
