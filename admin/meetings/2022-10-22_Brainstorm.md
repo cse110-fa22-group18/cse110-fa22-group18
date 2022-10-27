@@ -3,7 +3,7 @@
 ## \[Brainstorm\]
   
 ## Attendance
-**Taking notes:** <Yiyu>
+**Taking notes:** <>Yiyu Weng
   
 **Roll call**
 - [x] Daniel
