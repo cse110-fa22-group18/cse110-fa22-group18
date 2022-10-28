@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Pitch Doc\]
+## \[Pitch Document Meeting\]
   
 ## Attendance
 **Taking notes:** <name>
@@ -49,4 +49,4 @@
  
 ## For Next Meeting
 - Refine feature details
-- Get feedback from pitch to TA
+- Implement feedback from pitch to TA
