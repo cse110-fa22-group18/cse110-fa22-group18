@@ -1,4 +1,4 @@
-# Decision 
+## Decision 
 What is the decision?
 
 ## Why?
