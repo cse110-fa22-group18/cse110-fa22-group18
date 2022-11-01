@@ -3,7 +3,7 @@
 ## \[Weekly Meeting with Team and TA\]
   
 ## Attendance
-**Taking notes:** Mandeep Chera
+**Taking notes:** Danny Quang
   
 **Roll call**
 - [ ] Daniel
