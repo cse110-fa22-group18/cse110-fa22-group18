@@ -3,9 +3,9 @@
 ## \[Post Pitch Document Meeting\]
   
 ## Attendance
-** Taking notes:** Danny Quang
+**Taking notes:** Danny Quang
   
-** Roll call**
+**Roll call**
 - [x] Daniel
 - [x] Mandeep
 - [x] Danny
