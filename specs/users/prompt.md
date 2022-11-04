@@ -1,0 +1,1 @@
+User Centered Thinking Documents - we will produce personasLinks to an external site., user storiesLinks to an external site., and potentially use cases.Links to an external site. (/specs/users will contain this but user stories chosen will also be represented as issues to work on)
