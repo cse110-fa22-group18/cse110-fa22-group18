@@ -1,0 +1,1 @@
+Interface Design Documents - we will initially capture "fat marker design" later extended with wireframes and high fidelity prototypes (/specs/interface/rough, /specs/interface/wireframes, /specs/interface/highfidelity  These directories may contain single or multitude of documents)
