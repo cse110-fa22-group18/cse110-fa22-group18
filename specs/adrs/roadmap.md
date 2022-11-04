@@ -1,11 +1,26 @@
 # Project Roadmap
 
-## Week One
+## Week One 11/7 - 11/13
 
-## Week Two
+- [ ] 
+- [ ] 
 
-## Week Three
+## Week Two 11/14 - 11/20
 
-## Week Four
+- [ ] 
+- [ ] 
 
-## Week Five
+## Week Three 11/21 - 11/27
+
+- [ ] 
+- [ ] 
+
+## Week Four 11/28 - 12/04
+
+- [ ] 
+- [ ] 
+
+## Week Five 12/05 - 12/11
+
+- [ ] 
+- [ ] 
