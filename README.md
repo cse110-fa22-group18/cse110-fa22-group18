@@ -12,5 +12,5 @@
 **Create:** You have the ability to create a new edited photo through the editing features of our web app.\
 **Read:** You read the photos saved in local storage when you display, download, and delete them.\
 **Update:** You have the ability to both edit new photos and re-edit past photos.\
-**Delete:** Users have the ability to delete past edited photos within the gallery page.\
+**Delete:** Users have the ability to delete past edited photos within the gallery page.
 
