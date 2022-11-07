@@ -8,9 +8,9 @@
 
 **Problem and Solution:** There is no native way to quickly edit photos without opening a heavy app like Adobe Photoshop or ProCreate, this application should solve that issue as it allows usrs to efficiently go to the web app, upload a photo from their local device, make their edits, and download it right away. More importantly, other photo editing applications require cloud based syncing, which can be a problem for individuals with poor internet connections or when they edit sensitive images. A main advantage of our application is that it will be completely local first and nothing will be cloud based.
 
-**CRUD Overview:**
-**Create:** You have the ability to create a new edited photo through the editing features of our web app.
-**Read:** You read the photos saved in local storage when you display, download, and delete them.
-**Update:** You have the ability to both edit new photos and re-edit past photos.
-**Delete:** Users have the ability to delete past edited photos within the gallery page.
+**CRUD Overview:**\
+**Create:** You have the ability to create a new edited photo through the editing features of our web app.\
+**Read:** You read the photos saved in local storage when you display, download, and delete them.\
+**Update:** You have the ability to both edit new photos and re-edit past photos.\
+**Delete:** Users have the ability to delete past edited photos within the gallery page.\
 
