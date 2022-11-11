@@ -26,10 +26,14 @@
         <div class = "upload-section-box">
             <h3>Get started by inserting an image below: </h3>
             <img src="./assets/images/upload-icon.png" alt="" class="upload-icon">
-            <form id = "upload-form" enctype = "multipart/form-data" method = "post">
-                <input type = "file" id = "image">
+            <form id = "form" enctype = "multipart/form-data" method = "post">
+                <div class="form1">
+                    <input type = "file" id = "image">
+                </div>
                 <br>
-                <button type = "button" id = "upload-button">Upload Picture</button>
+                <div class="form1">
+                    <button class="button">Upload Picture</button>
+                </div>
             </form>
 
         </div>
@@ -42,9 +46,6 @@
     <section class = "footer-section" id = "footer-section">
         <h3>Developed by Team Eighteam</h3>
     </section>
-
-
-
-    
+    <script src="./assets/scripts/upload.js"></script>
 </body>
 </html>
