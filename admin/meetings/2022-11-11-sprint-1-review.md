@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Mob Code Meeting\]
+## \[Sprint Meeting 1\]
   
 ## Attendance
 **Taking notes:** Jiayi Guan
@@ -17,7 +17,7 @@
 - [x] Nathan
   
 ## Time and Place
-**Time:** 5:00pm - 
+**Time:** 12:00pm - 
 <br/>
 **Location:** (Remote) discord
   
