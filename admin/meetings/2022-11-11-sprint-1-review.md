@@ -22,13 +22,11 @@
 **Location:** (Remote) discord
   
 ## Today's Discussion
-- Mob code
-- ADR stuff
-- Details of how our website works
+- 
 
   
 ## Action Items
-- html files
+- 
  
 ## For Next Meeting
-- Meeting with TA
+- 
