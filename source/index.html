@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./assets/scripts/upload.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +28,13 @@
             <h3>Get started by inserting an image below: </h3>
             <img src="./assets/images/upload-icon.png" alt="" class="upload-icon">
             <form id = "upload-form" enctype = "multipart/form-data" method = "post">
-                <input type = "file" id = "image">
+                <div>
+                    <input type = "file" id = "image">
+                </div>
                 <br>
-                <button type = "button" id = "upload-button">Upload Picture</button>
+                <div>
+                    <button id="upload-button">Upload Picture</button>
+                </div>
             </form>
 
         </div>
@@ -42,9 +47,5 @@
     <section class = "footer-section" id = "footer-section">
         <h3>Developed by Team Eighteam</h3>
     </section>
-
-
-
-    
 </body>
 </html>
