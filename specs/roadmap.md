@@ -12,7 +12,7 @@
 - [x] exploratory code for CI and image storage 
 - [x] created and updated roadmap 
 - [ ] base html done early in the week
-- [ ] code written for image storage
+- [x] code written for image storage
 - [ ] initial html layouts committed
 - [ ] brightness  function done
 
