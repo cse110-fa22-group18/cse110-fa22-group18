@@ -45,11 +45,6 @@
   - Adding stretch features (focusing on rotate as of right now)
   - Creating the display/view function, so the images in local storage are displayed in the home/gallery page
   - Get image from local storage and display it when editing
-- **Things to improve on:**
-  - Consistency within the code to avoid linter errors
-  - Use Github issues more often
-  - Try to write the unit test right after finishing the function
-  - Enforce roles/tasks better - make sure everyone is assigned something and is working actively on it (front-end/back-end people work with each other more often)
   
 ## For Next Meeting
 - Agile - Retrospective Meeting
