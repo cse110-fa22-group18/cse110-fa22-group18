@@ -1,11 +1,9 @@
-window.addEventListener('DOMContentLoaded', init);
-
 function init()
 {
     const uploadForm = document.getElementById('upload-form');
     const imageList = [];
 
-    //event listener for when the form is submitted (essentially when the user chooses an image and uploads)
+    //event listener for when use chooses and uploads an image
     uploadForm.addEventListener('submit', (e) => 
     {
         e.preventDefault();
@@ -20,7 +18,7 @@ function init()
             if(localStorage)
             {
                 //holds the value of if the file extension is correct
-                let isCorrect = new Boolean(false);
+                let isCorrect = false;
                 //set the name property of the object to the name of the image
                 newImg.name = document.getElementById('image').files[0].name;
                 //set the image path property of the object to the path of the image
@@ -65,11 +63,11 @@ function init()
             //read the contents of the image file
             file.readAsDataURL(document.getElementById('image').files[0]);   
             location.reload();   
-        }
+        } else {
         //when empty image is uploaded, let the user know
-        else
-        {
             alert('Please choose a file to upload!');
         }
     })
 }
+
+window.addEventListener('DOMContentLoaded', init);
