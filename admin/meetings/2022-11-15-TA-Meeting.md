@@ -17,21 +17,22 @@
 - [x] Nathan
   
 ## Time and Place
-**Time:** 2:00 PM to 2:25 PM
+**Time:** 2:00 PM to 2:30 PM
 <br/>
 **Location:** (Remote) Zoom
   
 ## Today's Discussion
-- Mentions from Shubham
+- Miscellaneous mentions from Shubham
   - Good job on progress so far!
   - Make sure tests are up before the develop branch is merged to main
   - Deployed site may have bugs that can't be found locally 
   - A majority part of the evaluation will be how close the software engineering process is followed
-  - 
+  - Visual design and number of features in not crucial
+  - Our current wireframe is good as it is
 - Following the SE process
   - Review and retrospective done well
   - ADRs are in-depth
-  - Particularly approves of the exploratory coding strategy
+  - Shubham particularly approves of the exploratory coding strategy
   - Improve Github issues (HAVE ISSUES FOR EVERYTHING)
   
 ## Action Items
