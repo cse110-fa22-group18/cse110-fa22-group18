@@ -9,7 +9,6 @@
 - [ ] Daniel
 - [ ] Mandeep
 - [ ] Danny
-- [ ] Yi
 - [ ] Tim
 - [ ] Ira
 - [ ] Harris
