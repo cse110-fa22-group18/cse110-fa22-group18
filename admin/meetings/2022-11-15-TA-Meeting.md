@@ -28,6 +28,7 @@
   - Deployed site may have bugs that can't be found locally 
   - A majority part of the evaluation will be how close the software engineering process is followed
   - Visual design and number of features in not crucial
+  - ServiceWorkers should not be necessary
   - Our current wireframe is good as it is
 - Following the SE process
   - Review and retrospective done well
@@ -36,9 +37,10 @@
   - Improve Github issues (HAVE ISSUES FOR EVERYTHING)
   
 ## Action Items
-- Learn about unit testing from this weeks lab and start making unit tests
+- Learn about unit testing from the lab this week and start making unit tests
 - Try to implement the core features within this week for testing
 - Create an issue for each step
+- Add the complete wireframes to the high fidelity folder
  
 ## For Next Meeting
 - Status update on WIP for implementation of core features
