@@ -40,6 +40,7 @@
 - [ ] create a unit test for correct deletion of image from local storage and from the gallery
 - [ ] run code reviews on the code done
 - [ ] merge all reviewd and functional code to the "develop" branch
+- [ ] create status video
 
 ## Week Nine 11/21 - 11/27
 
@@ -47,6 +48,7 @@
 - [ ] working prototype with barebones features
 - [ ] Brightness editing
 - [ ] adding stretch features
+- [ ] add user stories and other needed elements to the repository
 
 ## Week Ten 11/28 - 12/04
 
