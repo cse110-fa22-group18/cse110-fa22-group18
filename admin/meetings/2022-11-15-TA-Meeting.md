@@ -31,7 +31,8 @@
   - ServiceWorkers should not be necessary
   - Our current wireframe is good as it is
 - Following the SE process
-  - Review and retrospective done well
+  - First sprint review and retrospective done well
+  - Sprint review every week could be first half of TA meeting (retrospective will be a separate meeting)
   - ADRs are in-depth
   - Shubham particularly approves of the exploratory coding strategy
   - Improve Github issues (HAVE ISSUES FOR EVERYTHING)
@@ -41,6 +42,7 @@
 - Try to implement the core features within this week for testing
 - Create an issue for each step
 - Add the complete wireframes to the high fidelity folder
+- Upcoming status video
  
 ## For Next Meeting
 - Status update on WIP for implementation of core features
