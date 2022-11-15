@@ -27,7 +27,7 @@
   - Make sure tests are up before the develop branch is merged to main
   - Deployed site may have bugs that can't be found locally 
   - A majority part of the evaluation will be how close the software engineering process is followed
-  - Visual design and number of features in not crucial
+  - Visual design and number of features are not crucial
   - ServiceWorkers should not be necessary
   - Our current wireframe is good as it is
 - Following the SE process
