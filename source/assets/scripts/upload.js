@@ -14,7 +14,7 @@ function init()
         //stores the allowed image extensions
         let allowedFileTypes = ['jpg', 'png', 'jpeg'];
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', () => 
+        file.addEventListener('load', async () => 
         {
             //as long as local storage exists/is supported on the browser
             if(localStorage)
