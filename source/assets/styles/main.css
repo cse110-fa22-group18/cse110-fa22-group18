@@ -144,7 +144,6 @@ section.footer-section {
 #pictures
 {
     justify-content: center;
-    padding: 50px 8%;
     width: 100%;
     align-items: center;
     display: flex;
@@ -152,17 +151,17 @@ section.footer-section {
 
 #gallery-container
 {
-    grid-gap: 148px;
-    grid-template-columns: repeat(4, minmax(331px, 1fr));
+    grid-gap: 250px;
+    grid-template-columns: repeat(3, minmax(370px, 1fr));
     display: grid;
+    grid-row-gap: 30px;
     max-width: 1000px;
 }
 
 #gallery-container img
 {
-    width: 400px;
-    height: 300px;
-    background-size: cover;
+    width: 600px;
+    height: 400px;
 }
 
 
