@@ -40,10 +40,9 @@ function init ()
                 if(askUser == "1" || askUser.toLowerCase() == "edit")
                 {
                     alert("redirecting to edit page");
-                }
                 /*if the user wants to delete the image, the image will be removed 
                 from local storage and the gallery*/
-                else if(askUser == "2" || askUser.toLowerCase() == "delete")
+                } else if(askUser == "2" || askUser.toLowerCase() == "delete")
                 {
                     /*get the img tag from the anchor tag*/
                     const image = clickedImg.firstChild;
@@ -61,9 +60,8 @@ function init ()
                     location.reload();
                     /*let the user know that the image has been deleted successfully*/
                     alert(`The image has been successfully deleted.`);
-                }
                 /*if the user wants to download the image then it will do so*/
-                else if(askUser == "3" || askUser.toLowerCase() == "download")
+                } else if(askUser == "3" || askUser.toLowerCase() == "download")
                 {
                     let pathName, fileName;
                     /*get the img tag from the anchor tag*/
@@ -92,9 +90,8 @@ function init ()
                     download.click();
                     /*remove the anchor tag as it will not be used again*/
                     download.remove();
-                }
                 /*in the case that the user puts in an invalid input, let them know*/
-                else
+                } else
                 {
                     alert('Please choose a valid option!');
                 }
