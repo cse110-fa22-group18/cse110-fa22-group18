@@ -5,8 +5,7 @@ function init ()
     //select the element in the html that contains all of the picture tags
     const gallery = document.getElementById("gallery-container");
     //as long as the image container exists in the local storage
-    if(imageList != null)
-    {
+    if(imageList != null) {
         /*for each image, create a new image and set the source of that image to the 
         current local storage image path create a new anchor tag and append the 
         new image to it lastly, add the new anchor tag that contains the image to the 
@@ -50,8 +49,7 @@ function init ()
                     for(let count = 0; count < imageList.length; count++)
                     {
                         //if the image exists within the local storage array
-                        if(imageList[count].path == image.src)
-                        {
+                        if(imageList[count].path == image.src) {
                             /*remove it from the local storage array and 
                             set it so that it saves the deletion*/
                             imageList.splice(count, 1);
