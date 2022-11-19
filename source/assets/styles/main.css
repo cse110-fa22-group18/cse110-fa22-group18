@@ -141,3 +141,27 @@ section.footer-section {
     color:#4a2283
 }
 
+#pictures
+{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#gallery-container
+{
+    grid-gap: 250px;
+    grid-template-columns: repeat(3, minmax(370px, 1fr));
+    display: grid;
+    grid-row-gap: 30px;
+    max-width: 1000px;
+}
+
+#gallery-container img
+{
+    width: 600px;
+    height: 400px;
+}
+
+
