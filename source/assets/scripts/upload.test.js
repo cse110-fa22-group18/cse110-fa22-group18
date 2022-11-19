@@ -1,1 +1,0 @@
-const upload = require('./upload.js');
