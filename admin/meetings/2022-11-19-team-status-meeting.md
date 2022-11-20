@@ -23,9 +23,9 @@
 **Location:** Online via Discord
   
 ## Today's Discussion
-- **Things to improve on:**
-  - Team status video
-  - general unit tests
+
+- Team status video
+- general unit tests
 
 ## Action Items
 
