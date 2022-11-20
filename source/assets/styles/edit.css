@@ -42,20 +42,44 @@ section.edit-section .feature-bar {
 
 section.edit-section .feature-bar .feature-bar-content {
     display: flex;
-    /* justify-content: column;  */
     flex-direction: column;
+    justify-content: space-evenly; 
     align-items: center;
+    height: 100%;
 
 
     /* object-fit: cover; */
 }
 
+section.edit-section .feature-bar .feature-bar-content button{
+    background-color: white;
+    border: none;
+}
+
+section.edit-section .feature-bar .feature-bar-content button.save-button{
+    width: 175px;
+    height: 50px;
+    background-color: #652CB3;
+    border: 0px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+section.edit-section .feature-bar .feature-bar-content button.save-button:hover{
+    background-color: #4a2283;
+}
 
 section.edit-section .feature-bar .feature-bar-content .rotate-button img {
     width: 100px;
     height: 100px;
     background: no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
 
+section.edit-section .feature-bar .feature-bar-content button.rotate-button:hover{
+    opacity: .5;
+    transition: .2s;
 }
 
 
@@ -63,8 +87,15 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img {
     width: 100px;
     height: 100px;
     background: no-repeat scroll 0 0 transparent;
-
+    cursor: pointer;
 }
+
+section.edit-section .feature-bar .feature-bar-content .brightness-button img:hover {
+    opacity: .5;
+    transition: .2s;
+}
+
+
 
 
 
