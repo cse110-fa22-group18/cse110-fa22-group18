@@ -26,35 +26,44 @@
 
 ## Week Eight 11/14 - 11/20
 
+- [x] create a wireframe for the edit page
+- [x] use the wireframe to code the edit page using html and css
+- [x] fix linter errors
+- [x] work with frontend and backend devs to display images in the gallery
+- [x] work with frontend and backend devs to download, edit, or delete the selected image in the gallery
+- [x] run code reviews on the code done
+- [x] merge all reviewd and functional code to the "develop" branch
+- [x] create status video
+- [x] run retrospective meeting
+- [x] run sprint meeting
+- [x] add new issue labels for weeks
+- [x] add more adrs
+
+## Week Nine 11/21 - 11/27
+
+- [ ] implement JSDocs or Climate for documentation
 - [ ] brightness function done and is functional within the edit page
-- [ ] create a wireframe for the edit page
-- [ ] use the wireframe to code the edit page using html and css
 - [ ] create a unit test for the upload image feature
-- [ ] fix linter errors
-- [ ] work with frontend and backend devs to display images in the gallery
 - [ ] work with frontend and backend devs to display the image when editing
-- [ ] work with frontend and backend devs to view, edit, or delete the selected image in the gallery
 - [ ] create a unit test for displaying images in the gallery
 - [ ] create a unit test for displaying images in the editing page
 - [ ] create a unit test for correct saving of edited image to local storage
 - [ ] create a unit test for correct deletion of image from local storage and from the gallery
-- [ ] run code reviews on the code done
-- [ ] merge all reviewd and functional code to the "develop" branch
-- [ ] create status video
-
-## Week Nine 11/21 - 11/27
-
 - [ ] html layout finished, on both gallery and edit
 - [ ] working prototype with barebones features
 - [ ] Brightness editing
 - [ ] adding stretch features
 - [ ] add user stories and other needed elements to the repository
+- [ ] run sprint meeting
+- [ ] run retrospective meeting
 
 ## Week Ten 11/28 - 12/04
 
 - [ ] Testing/CI all complete
 - [ ] Repository fully complete
 - [ ] All Github Issues resolved
+- [ ] run sprint meeting
+- [ ] run retrospective meeting
 
 ## Week Eleven 12/05 - 12/11
 
