@@ -18,7 +18,7 @@
 - [x] Nathan
   
 ## Time and Place
-**Time:** 1:00PM to 4:45PM
+**Time:** 1:00PM to 5:00PM
 <br/>
 **Location:** Online via Discord
   
