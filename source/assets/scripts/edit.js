@@ -32,4 +32,14 @@ function init()
         rotateAngle = rotateAngle + 90;
         image.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
     };
+
+    const saveBtn = document.getElementById('save-button');
+    saveBtn.addEventListener('click', () => {
+        for(let count = 0; count < imageList.length; count++){
+            if(imageList[count].name == imageName){
+                imageList[count].style = image.style.transform;
+                localStorage.setItem('Image Container', JSON.stringify(imageList));
+            }
+        }
+    });
 }

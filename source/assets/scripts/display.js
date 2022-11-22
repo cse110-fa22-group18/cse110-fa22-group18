@@ -17,6 +17,10 @@ function init ()
             let image = new Image();
             image.src = imageList[count].path;
             image.title = imageList[count].name;
+            if(imageList[count].style != null)
+            {
+                image.style.transform = imageList[count].style;
+            }
             const clickable = document.createElement('a');
             clickable.append(image);
             gallery.appendChild(clickable);
