@@ -1,6 +1,6 @@
 # Team 18: Eighteam
 
-## \[Meeting Type\]
+## \[TA Meeting\]
   
 ## Attendance
 **Taking notes:** <name>
