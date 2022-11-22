@@ -3,7 +3,7 @@
 ## \[TA Meeting\]
   
 ## Attendance
-**Taking notes:** <name>
+**Taking notes:** Ira
   
 **Roll call**
 - [x] Daniel
