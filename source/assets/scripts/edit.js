@@ -18,9 +18,16 @@ function init()
         //add it to the container in edit.html
         if(imageList[count].name == imageName)
         {
-            let image = new Image();
+            var image = new Image();
             image.src = imageList[count].path;
             container.append(image);
         }
     }
+
+    // when rotate button is clicked, rotate image by 90 degrees
+    var rotateAngle = 0;
+    document.getElementById('rotate-button').onclick = function() {
+        rotateAngle = rotateAngle + 90;
+        image.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
+    };
 }
