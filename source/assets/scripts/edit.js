@@ -25,21 +25,40 @@ function init()
         }
     }
 
-    // when rotate button is clicked, rotate image by 90 degrees
-    let image = document.getElementById('editing');
-    var rotateAngle = 0;
-    document.getElementById('rotate-button').onclick = function() {
-        rotateAngle = rotateAngle + 90;
-        image.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
-    };
 
-    const saveBtn = document.getElementById('save-button');
-    saveBtn.addEventListener('click', () => {
-        for(let count = 0; count < imageList.length; count++){
-            if(imageList[count].name == imageName){
-                imageList[count].style = image.style.transform;
-                localStorage.setItem('Image Container', JSON.stringify(imageList));
-            }
-        }
+    let image = document.getElementById('editing');
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");;
+    var cw = canvas.width;
+    var ch = canvas.height;
+
+    // create button
+    var button = document.getElementById('rotate-button');
+    var myImage = new Image();
+    button.addEventListener('click', () =>{
+        // rotate the canvas 90 degrees each time the button is pressed
+        myImage = new Image();
+        myImage.src = image.src;
+        rotate();
     });
+
+    
+    var rotate = function () {    
+        myImage.onload = function () {
+            // reset the canvas with new dimensions
+            /*canvas.width = myImage.width;
+            canvas.height = myImage.height;
+            cw = canvas.width;
+            ch = canvas.height;*/
+            context.save();
+            // translate and rotate
+            context.translate(myImage.width/2, myImage.height/2);
+            context.rotate(Math.PI / 2);
+            image.src = canvas.toDataURL("image/png");
+            // draw the previows image, now rotated
+            context.drawImage(myImage, -(myImage.width / 2), -(myImage.height / 2));               
+            context.restore();
+            myImage = null;       
+        }
+    }
 }
