@@ -192,3 +192,8 @@ section.edit-section div.row div.column img{
      padding: 0px;
  
  }
+
+.image-container canvas
+{
+    display: none;
+}

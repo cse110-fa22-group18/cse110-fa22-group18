@@ -55,21 +55,37 @@ function init()
             
             context.translate(cw, ch / cw);
             context.rotate(Math.PI / 2);
-            //image.src = canvas.toDataURL("image/png");
-            
-            context.drawImage(myImage, 0, 0);  
-            for(let count = 0; count < imageList.length; count++)
-            {
-                if(imageList[count].name == imageName)
-                {
-                    //let image = new Image();
-                    image.src = canvas.toDataURL("image/png");
-                    //image.src = imageList[count].path;
-                    //image.id = "editing";
-                    container.append(image);
-                }
-            }             
+            context.drawImage(myImage, 0, 0);         
+            image.src = canvas.toDataURL("image/png");   
             //context.restore(); 
         }
     }
+
+    //obtain the save button from edit.html
+    const saveBtn = document.getElementById("save-button");
+    //when the user saves the image after editing
+    saveBtn.addEventListener('click', () => {
+        for(let count = 0; count < imageList.length; count++)
+        {
+            //if the image is found in local storage,
+            //create a new image and set the source
+            //to the path in local storage, and then
+            //add it to the container in edit.html
+            if(imageList[count].name == imageName)
+            {
+                //set the data path to be the new edited image
+                imageList[count].path = canvas.toDataURL();
+                //save to local storage
+                localStorage.setItem('Image Container', JSON.stringify(imageList));
+            }
+        }
+        //get current url of the page
+        var currentURL = document.URL;
+        //remove unnecessary parts of the url
+        currentURL = currentURL.substring(0, currentURL.indexOf('?'));
+        //replace the edit page with the home/gallery page
+        currentURL = currentURL.replace('edit.html', "index.html");
+        //redirect the user
+        location.href = currentURL;
+    })
 }
