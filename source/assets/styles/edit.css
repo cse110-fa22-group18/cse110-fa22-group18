@@ -16,6 +16,16 @@ header .team-brand .edit-label {
 }
 
 
+header h1 {
+    color: #652CB3;
+}
+
+header a {
+    cursor: pointer;
+
+}
+
+
 
 /* Edit section */
 
@@ -70,14 +80,14 @@ section.edit-section .feature-bar .feature-bar-content button.save-button{
 }
 
 section.edit-section .feature-bar .feature-bar-content button.save-button:hover{
-    background-color: #4a2283;
+    background-color: #652CB3;
     opacity: .5;
     transition: .2s;
 }
 
 section.edit-section .feature-bar .feature-bar-content .rotate-button img {
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
     background: no-repeat scroll 0 0 transparent;
     cursor: pointer;
 }
@@ -89,8 +99,8 @@ section.edit-section .feature-bar .feature-bar-content button.rotate-button:hove
 
 
 section.edit-section .feature-bar .feature-bar-content .brightness-button img {
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
     background: no-repeat scroll 0 0 transparent;
     cursor: pointer;
 }
@@ -122,40 +132,16 @@ section.edit-section .image-container {
 section.edit-section #canvas {
     display: none;
 }
-
-
-
-    /* background-color: #E2D1FD;  */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3em;
-    row-gap: 3em;
-    padding: 2em; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr); */
-    /* grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row dense;
-    grid-gap: 0.5rem */
-    /* grid-column-gap: 0px;
-    grid-row-gap: 0px; */
  
 
 
-
  section.edit-section div.edit img{
-    /* grid-area: 2 / auto / auto / auto; */
     grid-column-start: 1;
 
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent; */
     cursor: pointer;
-
-    /* position: relative;
-    top: 120px;
-    left: 20px; */
 
     border-radius: 4px;
     width: 35px;
