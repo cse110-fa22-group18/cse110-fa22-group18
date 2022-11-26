@@ -17,7 +17,7 @@ function init()
             //as long as local storage exists/is supported on the browser
             if(localStorage)
             {
-                let duplicate_number = 0;
+                let duplicateNumber = 0;
                 //holds the value of if the file extension is correct
                 let isCorrect = false;
                 //set the name property of the object to the name of the image
@@ -61,7 +61,7 @@ function init()
                         if(imageContainer[count].name == imageName)
                         {
                             //increment the duplicate counter
-                            duplicate_number = duplicate_number + 1;
+                            duplicateNumber = duplicateNumber + 1;
                         }
                         //if the file is another duplicate
                         else if(dupName == imageName)
@@ -71,13 +71,13 @@ function init()
                             //remove the (
                             dupNum = dupNum.substring(1);
                             //the duplicate counter is that number plus one
-                            duplicate_number = parseInt(dupNum) + 1;
+                            duplicateNumber = parseInt(dupNum, 10) + 1;
                         }
                     }
                     //add the duplicate number to a duplicate file
-                    if(duplicate_number != 0)
+                    if(duplicateNumber != 0)
                     {
-                        newImg.name = newImg.name + `(${duplicate_number})`;
+                        newImg.name = newImg.name + `(${duplicateNumber})`;
                     }
                     //add the new image object to the existing array
                     imageContainer.push(newImg);
