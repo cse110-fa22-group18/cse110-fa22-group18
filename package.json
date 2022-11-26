@@ -1,7 +1,22 @@
 {
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^27.5.1",
+    "jest-puppeteer": "^6.1.1",
+    "puppeteer": "^11.0.0"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint ."
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "verbose": true
   },
   "name": "unit-testing",
   "version": "1.0.0",
@@ -9,10 +24,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.27.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
-  },
   "description": ""
 }
