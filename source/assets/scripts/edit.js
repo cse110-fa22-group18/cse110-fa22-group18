@@ -63,6 +63,7 @@ function init()
     
     //adjust brightness by range slider
     const rangeInput = document.getElementById('range');
+    const oriInput=rangeInput.value;
     //adjust by style filter first
     //then update needed value to canvas when click save button
     rangeInput.addEventListener("change",function(){
@@ -73,8 +74,9 @@ function init()
     function setBrightness(){
         myImage = new Image();
         myImage.src = image.src;
+        canvas.width = myImage.width;
+        canvas.height = myImage.height;
         context.filter="brightness(" + rangeInput.value + "%" +")";
-        console.log(context.filter);
         context.drawImage(myImage, 0, 0); 
         image.src = canvas.toDataURL("image/png");
     }
@@ -85,7 +87,9 @@ function init()
     //when the user saves the image after editing
     saveBtn.addEventListener('click', () => {
         //save the brightness value
-        setBrightness();
+        if(rangeInput.value!=oriInput){
+            setBrightness();
+        }
         for(let count = 0; count < imageList.length; count++)
         {
             //if the image is found in local storage,
