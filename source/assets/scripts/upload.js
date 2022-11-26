@@ -49,9 +49,7 @@ function init()
                     //add a new array with the image uploaded to local storage
                     imageList.push(newImg);
                     window.localStorage.setItem('Image Container', JSON.stringify(imageList));
-                }
-                else
-                {
+                } else {
                     const imageName = newImg.name;
                     for(let count = 0; count < imageContainer.length; count++)
                     {
