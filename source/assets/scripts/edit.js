@@ -27,14 +27,15 @@ function init()
         }
     }
 
-
+    // get the image we want to work on
     let image = document.getElementById('editing');
+    // get the canvas and its context
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");;
     var cw = canvas.width;
     var ch = canvas.height;
 
-    
+    // when rotate button is clicked, call rotate()
     var button = document.getElementById('rotate-button');
     var myImage = new Image();
     button.addEventListener('click', () =>{
@@ -43,7 +44,7 @@ function init()
         rotate();
     });
 
-    
+    // rotate image and update image src
     var rotate = function () {    
         myImage.onload = function () {
             
