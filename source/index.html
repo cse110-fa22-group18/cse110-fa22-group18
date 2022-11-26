@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./assets/scripts/upload.js"></script>
+    <script src="./assets/scripts/display.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is for styling from main.css for this index.html -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <!-- This is for the favicon icon -->
+    <link rel = "icon" type = "image/png" href = "./assets/images/logo.png">
+    <title>Eighteam Photoshop</title>
+</head>
+
+<body>
+    <header>
+        <div class = "team-brand">
+            <img src="./assets/images/team-logo.png" alt="" class="logo">
+            <h1 class = "team-name">Eighteam Photoshop</h1>
+        </div>
+        <nav class = "main-nav">
+            <ul class ="nav-links">
+                <li><a href="#upload-section"><b>Upload Picture</b></a></li>
+                <li><a href="#gallery-section"><b>View/Edit Gallery</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class = "upload-section" id = "upload-section">
+        <div class = "upload-section-box">
+            <h3>Get started by inserting an image below: </h3>
+            <img src="./assets/images/upload-icon.png" alt="" class="upload-icon">
+            <form id = "upload-form" enctype = "multipart/form-data" method = "post">
+                <div>
+                    <input type = "file" id = "image">
+                </div>
+                <br>
+                <div>
+                    <button id="upload-button">Upload Picture</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <section class = "gallery-section" id = "gallery-section">
+        <h1>Gallery</h1>
+        <div id = 'pictures'>
+            <div id="gallery-container">
+            </div>
+        </div>
+    </section>
+
+    <section class = "footer-section" id = "footer-section">
+        <h3>Developed by Team Eighteam</h3>
+    </section>
+</body>
+</html>

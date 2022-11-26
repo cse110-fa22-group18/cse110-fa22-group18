@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+header .team-brand {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+header img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+header .team-brand .team-name {
+    color:#652CB3;
+    font-weight: 500;
+}
+
+header .main-nav .nav-links {
+    list-style: none;
+}
+header .main-nav .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: auto;
+}
+
+header .main-nav .nav-links li a {
+    font-size: 0.9rem;
+    color: #652CB3;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: large;
+}
+
+header .main-nav .nav-links li a:hover {
+    color: #4a2283;
+}
+
+section.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D1FD;
+    height: 90vh;
+}
+
+section.upload-section .upload-section-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60vh;
+    min-height: 50vh;
+    background-color: white;
+    color: #652CB3;
+    padding: 5%;
+    margin: 10vh 0px 0px 0px;
+}
+
+section.upload-section div.upload-section-box .upload-icon {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.upload-section div.upload-section-box form#upload-form {
+    margin-left: auto;
+}
+
+section.upload-section button#upload-button {
+    width: 175px;
+    height: 50px;
+    background-color: #652CB3;
+    border: 0px;
+    color: white;
+    margin-top: 5%;
+}
+
+section.upload-section button#upload-button:hover{
+    background-color: #4a2283;
+}
+
+section.gallery-section {
+   background-color: white; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 3em;
+   row-gap: 3em;
+   padding: 2em;
+}
+
+section.gallery-section > h1 {
+    color: #652CB3;
+    padding: 25px;
+    font-size: 50px;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+section.gallery-section .gallery-section-container {
+    aspect-ratio: 1;
+    padding: 0px;
+
+}
+
+section.gallery-section .gallery-section-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D1FD;
+    height: 20vh; 
+    color:#4a2283
+}
+
+#pictures
+{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#gallery-container
+{
+    grid-gap: 250px;
+    grid-template-columns: repeat(3, minmax(370px, 1fr));
+    display: grid;
+    grid-row-gap: 30px;
+    max-width: 1000px;
+}
+
+#gallery-container img
+{
+    width: 600px;
+    height: 400px;
+}
+
+

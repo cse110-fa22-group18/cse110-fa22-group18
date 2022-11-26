@@ -1,5 +1,18 @@
 {
   "scripts": {
-    "test": "jest"
-  }
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "main": "sum.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "description": ""
 }
