@@ -1,55 +1,30 @@
 # Decision/Choice
-- Status: 
-- Deciders: 
-- Date: 
+- Status: accepted
+- Deciders: The whole team
+- Date: 11/25/2022
 
 ## Context and Problem Statement
-How should we store user created content and preferences? Specifically, how should user and community recipes be stored and served?
+How should we test our code? Specifically, how can we automate our testing to reduce the slowness and risks of manual testing?
 
 ## Decision Drivers
-- We need to implement
-- We want to minimize 
-- We want to maximize
+- We need to implement e2e testing with puppeteer to automate upload and display testing
+- We want to minimize manual testing that is time intensive
+- We want to maximize efficiency in testing
 
 ## Considered Options
-- 
--
+- Puppeteer
+- JQuery
 
 ## Decision Outcome
-Chosen option and reason: 
+Chosen option and reason: Puppeteer because of its introduction through the lab
 
 ### Positive Consequences <!-- optional -->
--
-- 
+- Automated upload and display testing to be used in the development pipeline
+- Puppeteer has the necessary features for the user workflow of our website
 
 ### Negative Consequences <!-- optional -->
-- 
--
-
-## Pros and Cons of the Options <!-- optional -->
-
-### Topic
-General Description <!-- optional -->
-- Good, because it is 
-- Good, because it 
-- Good, because it 
-- Bad, because 
-- Bad, because
-
-### Topic
-General Description <!-- optional -->
-- Good, because it is
-- Good, because it
-- Bad, because it
-- Bad, because 
-- Bad, because
-
-### Topic
-General Description
-- Good, because 
-- Good, because 
-- Bad, because 
-- Bad, because
-- Bad, because
+- There is so much to puppeteer that it is confusing
+- Difficult to find the correct methods and functionalities to use
 
 ## Links 
+- [Puppeteer API](https://github.com/puppeteer/puppeteer/blob/v1.18.1/docs/api.md)
