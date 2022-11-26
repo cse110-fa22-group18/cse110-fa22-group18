@@ -9,6 +9,8 @@
     scroll-padding-top: 100px;
 }
 
+/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -58,6 +60,13 @@ header .main-nav .nav-links li a:hover {
     color: #4a2283;
 }
 
+header a {
+    cursor: pointer;
+}
+
+
+/* Upload Section */
+
 section.upload-section {
     display: flex;
     justify-content: center;
@@ -102,6 +111,8 @@ section.upload-section button#upload-button {
 section.upload-section button#upload-button:hover{
     background-color: #4a2283;
 }
+
+/* Gallery Section */
 
 section.gallery-section {
    background-color: white; 
@@ -173,7 +184,7 @@ section.gallery-section .gallery-container img {
 
 
 
-
+/* Footer Section */
 
 
 section.footer-section {
