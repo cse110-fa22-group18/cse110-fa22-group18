@@ -52,7 +52,7 @@ function init()
             cw = canvas.width;
             ch = canvas.height;
             //context.save();
-            
+
             context.translate(cw, ch / cw);
             context.rotate(Math.PI / 2);
             context.drawImage(myImage, 0, 0);         
@@ -60,6 +60,20 @@ function init()
             //context.restore(); 
         }
     }
+    
+    //adjust brightness by range slider
+    const rangeInput = document.getElementById('range');
+
+    rangeInput.addEventListener("change",function(){
+        myImage = new Image();
+        myImage.src = image.src;
+        context.save();
+        context.filter ="brightness(" + rangeInput.value + "%" +")";
+        console.log(context.filter);
+        context.drawImage(myImage, 0, 0);         
+        image.src = canvas.toDataURL("image/png");
+        context.restore(); 
+    });
 
     //obtain the save button from edit.html
     const saveBtn = document.getElementById("save-button");
