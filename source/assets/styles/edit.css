@@ -17,6 +17,10 @@ header .team-brand .edit-label {
 
 
 
+/* Edit section */
+
+
+
 section.edit-section {
     
     display: grid;
@@ -28,7 +32,6 @@ section.edit-section {
 section.edit-section .feature-bar {
     background-color: white;
 
-    border-style: solid;
     padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 10%;
@@ -57,8 +60,8 @@ section.edit-section .feature-bar .feature-bar-content button{
 }
 
 section.edit-section .feature-bar .feature-bar-content button.save-button{
-    width: 175px;
-    height: 50px;
+    width: 135%;
+    height: 7.5%;
     background-color: #652CB3;
     border: 0px;
     color: white;
@@ -68,6 +71,8 @@ section.edit-section .feature-bar .feature-bar-content button.save-button{
 
 section.edit-section .feature-bar .feature-bar-content button.save-button:hover{
     background-color: #4a2283;
+    opacity: .5;
+    transition: .2s;
 }
 
 section.edit-section .feature-bar .feature-bar-content .rotate-button img {
@@ -107,8 +112,18 @@ section.edit-section .image-container {
     margin-right: .5%;
     margin-top: .5%;
     margin-bottom: .5%;
+
     /* margin-bottom: 10%; */
+    text-align: center;
 }
+
+
+/* get rid of duplicate image in canvas since it displays both image container and canvas */
+section.edit-section #canvas {
+    display: none;
+}
+
+
 
     /* background-color: #E2D1FD;  */
     /* display: grid;
@@ -144,36 +159,6 @@ section.edit-section .image-container {
 
     border-radius: 4px;
     width: 35px;
-}
-
-
-section.edit-section div.edit2 img {
-    /* grid-area: 3 / auto / auto / auto; */
-    grid-column-start: 2;
-
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
-    cursor: pointer;
-
-    /* position: relative;
-    top: 170px;
-    left: 0px; */
-
-
-    border-radius: 4px;
-    width: 35px;
-
-
-}
-
-
-
-section.edit-section div.row div.column img{
-    position: relative;
-    left: 500px;
 }
  
 
