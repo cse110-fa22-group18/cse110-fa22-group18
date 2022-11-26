@@ -46,6 +46,7 @@ function init ()
                 {
                     //get the current page URL
                     var currentURL = document.URL;
+                    currentURL = currentURL.substring(0, currentURL.indexOf('#'));
                     //remove index.html from url
                     currentURL = currentURL.replace("index.html", "");
                     //add in edit.html at the end to change link

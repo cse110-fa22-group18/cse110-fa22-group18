@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="./assets/scripts/edit.js"></script>
+    <script src="./assets/scripts/redirect.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +19,8 @@
     <header>
         <!-- left div so css pushes it left -->
         <div class = "team-brand">
-            <img src="./assets/images/team-logo.png" alt="" class="logo">
-            <h1 class = "team-name">Eighteam Photoshop</h1>
+            <img src="./assets/images/team-logo.png" alt="" class="logo" id="logo">
+            <h1 class = "team-name" id="team-name">Eighteam Photoshop</h1>
         </div>
 
         <!-- edit label in the middle -->
@@ -28,8 +29,8 @@
         <!-- right div so css pushes it right -->
         <nav class = "main-nav">
             <ul class ="nav-links">
-                <li><a href="#upload-section"><b>Upload Picture</b></a></li>
-                <li><a href="#gallery-section"><b>View/Edit Gallery</b></a></li>
+                <li><a href="#upload-section" id="red-upload"><b>Upload Picture</b></a></li>
+                <li><a href="#gallery-section" id="red-gallery"><b>View/Edit Gallery</b></a></li>
             </ul>
         </nav>
     </header>
