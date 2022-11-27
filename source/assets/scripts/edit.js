@@ -27,15 +27,14 @@ function init()
         }
     }
 
-    // get the image we want to work on
+
     let image = document.getElementById('editing');
-    // get the canvas and its context
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");;
     var cw = canvas.width;
     var ch = canvas.height;
 
-    // when rotate button is clicked, call rotate()
+    
     var button = document.getElementById('rotate-button');
     var myImage = new Image();
     button.addEventListener('click', () =>{
@@ -44,7 +43,7 @@ function init()
         rotate();
     });
 
-    // rotate image and update image src
+    
     var rotate = function () {    
         myImage.onload = function () {
             
@@ -64,22 +63,33 @@ function init()
     
     //adjust brightness by range slider
     const rangeInput = document.getElementById('range');
-
+    const oriInput=rangeInput.value;
+    //adjust by style filter first
+    //then update needed value to canvas when click save button
     rangeInput.addEventListener("change",function(){
+        image.style.filter ="brightness(" + rangeInput.value + "%" +")";
+        
+    });
+
+    function setBrightness(){
         myImage = new Image();
         myImage.src = image.src;
-        context.save();
-        context.filter ="brightness(" + rangeInput.value + "%" +")";
-        console.log(context.filter);
-        context.drawImage(myImage, 0, 0);         
+        canvas.width = myImage.width;
+        canvas.height = myImage.height;
+        context.filter="brightness(" + rangeInput.value + "%" +")";
+        context.drawImage(myImage, 0, 0); 
         image.src = canvas.toDataURL("image/png");
-        context.restore(); 
-    });
+    }
+
 
     //obtain the save button from edit.html
     const saveBtn = document.getElementById("save-button");
     //when the user saves the image after editing
     saveBtn.addEventListener('click', () => {
+        //save the brightness value
+        if(rangeInput.value!=oriInput){
+            setBrightness();
+        }
         for(let count = 0; count < imageList.length; count++)
         {
             //if the image is found in local storage,
