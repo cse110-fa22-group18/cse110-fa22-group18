@@ -60,8 +60,7 @@ function init()
                         {
                             //increment the duplicate counter
                             duplicateNumber = duplicateNumber + 1;
-                        } else if(dupName == imageName) //if the file is another duplicate
-                        {
+                        } else if(dupName == imageName) { //if the file is another duplicate
                             //get the duplicate number from local storage file
                             let dupNum = (imageContainer[count].name).substring((imageContainer[count].name).indexOf('('), (imageContainer[count].name).indexOf(')'));
                             //remove the (

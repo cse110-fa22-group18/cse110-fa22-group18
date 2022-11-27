@@ -1,4 +1,5 @@
-window.addEventListener('DOMContentLoaded', init);
+const brightnessStart = "brightness(";
+const brightnessEnd = "%)";
 
 function init()
 {
@@ -29,22 +30,12 @@ function init()
 
 
     let image = document.getElementById('editing');
-    var canvas = document.getElementById("canvas");
-    var context = canvas.getContext("2d");;
-    var cw = canvas.width;
-    var ch = canvas.height;
+    let canvas = document.getElementById("canvas");
+    let context = canvas.getContext("2d");;
+    let cw = canvas.width;
+    let ch = canvas.height;
 
-    
-    var button = document.getElementById('rotate-button');
-    var myImage = new Image();
-    button.addEventListener('click', () =>{
-        myImage = new Image();
-        myImage.src = image.src;
-        rotate();
-    });
-
-    
-    var rotate = function () {    
+    let rotate = function () {    
         myImage.onload = function () {
             
             canvas.width = myImage.height;
@@ -60,6 +51,15 @@ function init()
             //context.restore(); 
         }
     }
+
+    
+    let button = document.getElementById('rotate-button');
+    let myImage = new Image();
+    button.addEventListener('click', () =>{
+        myImage = new Image();
+        myImage.src = image.src;
+        rotate();
+    });
     
     //adjust brightness by range slider
     const rangeInput = document.getElementById('range');
@@ -67,7 +67,7 @@ function init()
     //adjust by style filter first
     //then update needed value to canvas when click save button
     rangeInput.addEventListener("change",function(){
-        image.style.filter ="brightness(" + rangeInput.value + "%" +")";
+        image.style.filter =brightnessStart + rangeInput.value + brightnessEnd;
         
     });
 
@@ -76,7 +76,7 @@ function init()
         myImage.src = image.src;
         canvas.width = myImage.width;
         canvas.height = myImage.height;
-        context.filter="brightness(" + rangeInput.value + "%" +")";
+        context.filter=brightnessStart + rangeInput.value + brightnessEnd;
         context.drawImage(myImage, 0, 0); 
         image.src = canvas.toDataURL("image/png");
     }
@@ -105,7 +105,7 @@ function init()
             }
         }
         //get current url of the page
-        var currentURL = document.URL;
+        currentURL = document.URL;
         //remove unnecessary parts of the url
         currentURL = currentURL.substring(0, currentURL.indexOf('?'));
         //replace the edit page with the home/gallery page
@@ -114,3 +114,5 @@ function init()
         location.href = currentURL;
     })
 }
+
+window.addEventListener('DOMContentLoaded', init);
