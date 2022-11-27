@@ -34,7 +34,7 @@ header a {
 section.edit-section {
     
     display: grid;
-    grid-template-columns: .5fr 2fr;
+    grid-template-columns: minmax(1cm,3cm) 2fr;
     background-color: #E2D1FD;
     height: 90vh;
 }
@@ -117,7 +117,7 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
 
 section.edit-section .image-container {
     border-style: solid;
-    object-fit: cover;
+    object-fit: scale-down;
 
     margin-right: .5%;
     margin-top: .5%;
