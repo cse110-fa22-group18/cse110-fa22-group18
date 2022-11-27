@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+header .team-brand .edit-label {
+    justify-content: center;
+
+}
+
+
+header h1 {
+    color: #652CB3;
+}
+
+header a {
+    cursor: pointer;
+
+}
+
+
+
+/* Edit section */
+
+
+
+section.edit-section {
+    
+    display: grid;
+    grid-template-columns: minmax(1cm,3cm) 2fr;
+    background-color: #E2D1FD;
+    height: 90vh;
+}
+
+section.edit-section .feature-bar {
+    background-color: white;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section.edit-section .feature-bar .feature-bar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    height: 100%;
+
+
+    /* object-fit: cover; */
+}
+
+section.edit-section .feature-bar .feature-bar-content button{
+    background-color: white;
+    border: none;
+}
+
+section.edit-section .feature-bar .feature-bar-content button.save-button{
+    width: 135%;
+    height: 7.5%;
+    background-color: #652CB3;
+    border: 0px;
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+section.edit-section .feature-bar .feature-bar-content button.save-button:hover{
+    background-color: #652CB3;
+    opacity: .5;
+    transition: .2s;
+}
+
+section.edit-section .feature-bar .feature-bar-content .rotate-button img {
+    width: 90%;
+    height: 90%;
+    background: no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
+
+section.edit-section .feature-bar .feature-bar-content button.rotate-button:hover{
+    opacity: .5;
+    transition: .2s;
+}
+
+
+section.edit-section .feature-bar .feature-bar-content .brightness-button img {
+    width: 90%;
+    height: 90%;
+    background: no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
+
+section.edit-section .feature-bar .feature-bar-content .brightness-button img:hover {
+    opacity: .5;
+    transition: .2s;
+}
+
+
+
+
+
+
+section.edit-section .image-container {
+    border-style: solid;
+    object-fit: scale-down;
+
+    margin-right: .5%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+
+    /* margin-bottom: 10%; */
+    text-align: center;
+}
+
+
+/* get rid of duplicate image in canvas since it displays both image container and canvas */
+section.edit-section #canvas {
+    display: none;
+}
+ 
+
+
+ section.edit-section div.edit img{
+    grid-column-start: 1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+    border-radius: 4px;
+    width: 35px;
+}
+ 
+
+
+ /* Gallery title styling */
+ section.edit-section > h1 {
+     color: #652CB3;
+     padding: 25px;
+     font-size: 50px;
+     text-align: center;
+     grid-column: 1 / 4;
+ }
+ 
+ section.edit-section .edit-section-container {
+     aspect-ratio: 1;
+     padding: 0px;
+ 
+ }
+
+.image-container canvas
+{
+    display: none;
+}
