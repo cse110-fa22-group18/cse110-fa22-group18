@@ -15,6 +15,7 @@ module.exports = {
     eqeqeq: 'off',
     'no-restricted-globals': 'off',
     'prefer-destructuring': 'off',
+    'no-alert': 'off',
   },
   ignorePatterns: ['*.test.*'],
 };
