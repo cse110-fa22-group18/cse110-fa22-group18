@@ -34,6 +34,7 @@ function init()
     let context = canvas.getContext("2d");;
     let cw = canvas.width;
     let ch = canvas.height;
+    let myImage = new Image();
 
     let rotate = function () {    
         myImage.onload = function () {
@@ -54,7 +55,6 @@ function init()
 
     
     let button = document.getElementById('rotate-button');
-    let myImage = new Image();
     button.addEventListener('click', () =>{
         myImage = new Image();
         myImage.src = image.src;
