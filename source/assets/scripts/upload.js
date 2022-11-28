@@ -17,6 +17,7 @@ function init()
             //as long as local storage exists/is supported on the browser
             if(localStorage)
             {
+                let duplicateNumber = 0;
                 //holds the value of if the file extension is correct
                 let isCorrect = false;
                 //set the name property of the object to the name of the image
@@ -48,9 +49,31 @@ function init()
                     //add a new array with the image uploaded to local storage
                     imageList.push(newImg);
                     window.localStorage.setItem('Image Container', JSON.stringify(imageList));
-                }
-                else
-                {
+                } else {
+                    const imageName = newImg.name;
+                    for(let count = 0; count < imageContainer.length; count++)
+                    {
+                        //remove the (number) from the duplicate file
+                        let dupName = (imageContainer[count].name).split('(')[0];
+                        //if the file is found in local storage
+                        if(imageContainer[count].name == imageName)
+                        {
+                            //increment the duplicate counter
+                            duplicateNumber = duplicateNumber + 1;
+                        } else if(dupName == imageName) { //if the file is another duplicate
+                            //get the duplicate number from local storage file
+                            let dupNum = (imageContainer[count].name).substring((imageContainer[count].name).indexOf('('), (imageContainer[count].name).indexOf(')'));
+                            //remove the (
+                            dupNum = dupNum.substring(1);
+                            //the duplicate counter is that number plus one
+                            duplicateNumber = parseInt(dupNum, 10) + 1;
+                        }
+                    }
+                    //add the duplicate number to a duplicate file
+                    if(duplicateNumber != 0)
+                    {
+                        newImg.name = newImg.name + `(${duplicateNumber})`;
+                    }
                     //add the new image object to the existing array
                     imageContainer.push(newImg);
                     window.localStorage.setItem('Image Container', JSON.stringify(imageContainer));
