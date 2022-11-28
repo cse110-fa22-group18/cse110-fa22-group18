@@ -1,101 +1,121 @@
-function init()
-{
+const DB_NAME = 'imagedb';
+const DB_VERSION = 2; // Use a long long for this value (don't use a float)
+const DB_STORE_NAME = 'images';
+
+var db;
+function openDb() {
+    console.log("openDb ...");
+    var req = indexedDB.open(DB_NAME);
+    req.onsuccess = function (evt) {
+      // Equal to: db = req.result;
+      db = this.result;
+      console.log("openDb DONE");
+    };
+    req.onerror = function (evt) {
+      console.error("openDb:", evt.target.errorCode);
+    };
+
+    req.onupgradeneeded = function (evt) {
+      console.log("openDb.onupgradeneeded");
+      var store = evt.currentTarget.result.createObjectStore(
+        DB_STORE_NAME, { keyPath: 'name'});
+    };
+}
+
+/**
+ * @param {string} store_name
+ * @param {string} mode either "readonly" or "readwrite"
+ */
+function getObjectStore(store_name, mode) {
+    var tx = db.transaction(store_name, mode);
+    return tx.objectStore(store_name);
+}
+
+function clearObjectStore() {
+    var store = getObjectStore(DB_STORE_NAME, 'readwrite');
+    var req = store.clear();
+    req.onsuccess = function(evt) {
+      displayActionSuccess("Store cleared");
+      displayPubList(store);
+    };
+    req.onerror = function (evt) {
+      console.error("clearObjectStore:", evt.target.errorCode);
+      displayActionFailure(this.error);
+    };
+}
+
+function init(){
     const uploadForm = document.getElementById('upload-form');
     const imageList = [];
+    const request = window.indexedDB.open("images", 3);
+
+    openDb();
 
     //event listener for when use chooses and uploads an image
     uploadForm.addEventListener('submit', (e) => 
     {
         e.preventDefault();
         const file = new FileReader();
-        const newImg = {};
+        let newImg = {};
+        var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
         //stores the allowed image extensions
         let allowedFileTypes = ['jpg', 'png', 'jpeg'];
+
+        const selectedFile = document.getElementById('image').files[0];
+
+        
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', async () => 
+        file.addEventListener('load', function handleEvent(event) 
         {
-            //as long as local storage exists/is supported on the browser
-            if(localStorage)
+            //holds the value of if the file extension is correct
+            let isCorrect = false;
+            //set the name property of the object to the name of the image
+            newImg.name = document.getElementById('image').files[0].name;
+            //set the image path property of the object to the path of the image
+            newImg.path = file.result;
+            //loops through the allowed extensions
+            for(let count = 0; count < allowedFileTypes.length; count++)
             {
-                let duplicate_number = 0;
-                //holds the value of if the file extension is correct
-                let isCorrect = false;
-                //set the name property of the object to the name of the image
-                newImg.name = document.getElementById('image').files[0].name;
-                //set the image path property of the object to the path of the image
-                newImg.path = file.result;
-                //if an array of images already exists, get it from local storage
-                const imageContainer = JSON.parse(localStorage.getItem('Image Container'));
-                //loops through the allowed extensions
-                for(let count = 0; count < allowedFileTypes.length; count++)
+                //gets the extension through the file name
+                const fileExtension = newImg.name.split('.').pop();
+                //when it detects the correct file extension set the bool var to true to indicate that
+                if(allowedFileTypes[count] == fileExtension)
                 {
-                    //gets the extension through the file name
-                    const fileExtension = newImg.name.split('.').pop();
-                    //when it detects the correct file extension set the bool var to true to indicate that
-                    if(allowedFileTypes[count] == fileExtension)
-                    {
-                        isCorrect = true;
-                    }
-                }
-                //in the case that the file extension is invalid, let the user know and return
-                if(isCorrect != true)
-                {
-                    alert('Invalid file type! We only accept jpeg, jpg, and PNG file types.');
-                    return;
-                }
-                //case when an array of images DNE
-                if(imageContainer == null)
-                {
-                    //add a new array with the image uploaded to local storage
-                    imageList.push(newImg);
-                    window.localStorage.setItem('Image Container', JSON.stringify(imageList));
-                }
-                else
-                {
-                    const imageName = newImg.name;
-                    for(let count = 0; count < imageContainer.length; count++)
-                    {
-                        //remove the (number) from the duplicate file
-                        let dupName = (imageContainer[count].name).split('(')[0];
-                        //if the file is found in local storage
-                        if(imageContainer[count].name == imageName)
-                        {
-                            //increment the duplicate counter
-                            duplicate_number = duplicate_number + 1;
-                        }
-                        //if the file is another duplicate
-                        else if(dupName == imageName)
-                        {
-                            //get the duplicate number from local storage file
-                            let dupNum = (imageContainer[count].name).substring((imageContainer[count].name).indexOf('('), (imageContainer[count].name).indexOf(')'));
-                            //remove the (
-                            dupNum = dupNum.substring(1);
-                            //the duplicate counter is that number plus one
-                            duplicate_number = parseInt(dupNum) + 1;
-                        }
-                    }
-                    //add the duplicate number to a duplicate file
-                    if(duplicate_number != 0)
-                    {
-                        newImg.name = newImg.name + `(${duplicate_number})`;
-                    }
-                    //add the new image object to the existing array
-                    imageContainer.push(newImg);
-                    window.localStorage.setItem('Image Container', JSON.stringify(imageContainer));
+                    isCorrect = true;
                 }
             }
-        })
-        //checks for the case when an empty image is uploaded
-        if(document.getElementById('image').files[0] != null)
+            //in the case that the file extension is invalid, let the user know and return
+            if(!isCorrect)
+            {
+                alert('Invalid file type! We only accept jpeg, jpg, and PNG file types.');
+                return;
+            }
+            addImage(newImg);
+        }); 
+
+        if(selectedFile)
         {
             //read the contents of the image file
-            file.readAsDataURL(document.getElementById('image').files[0]);   
-            location.reload();   
+            file.readAsDataURL(selectedFile); 
+            uploadForm.reset(); 
         } else {
         //when empty image is uploaded, let the user know
             alert('Please choose a file to upload!');
-        }
-    })
+        }    
+    });
+}
+
+function addImage(newImg){
+    var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
+    const request = imageStore.add(newImg);
+    request.onerror = (event) => { //name found in db
+        newImg.name += "(copy)";
+        addImage(newImg);
+    };
+    request.onsuccess = (event) => {
+        console.log(newImg.name + " added to db");
+    };
+    
 }
 
 window.addEventListener('DOMContentLoaded', init);
