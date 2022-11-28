@@ -1,4 +1,3 @@
-window.addEventListener('DOMContentLoaded', init);
 
 function init() {
     var rotateAngle = 0,
@@ -8,3 +7,4 @@ function init() {
         img.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
     }
 }
+window.addEventListener('DOMContentLoaded', init);
