@@ -8,11 +8,11 @@ const uploadButton = document.getElementById('form');
 
 function show()
 {
-    const imageList = JSON.parse(localStorage.getItem('Image Container'))
-    for (let x = 0; x < imageList.length; x++)
+    const images = JSON.parse(localStorage.getItem('Image Container'))
+    for (let x = 0; x < images.length; x++)
     {
         let newImg = new Image()
-        newImg.src = imageList[x].path 
+        newImg.src = images[x].path 
         parent.appendChild(newImg)
     }
 }
@@ -43,15 +43,11 @@ uploadButton.addEventListener('submit', (e) => {
     file.readAsDataURL(document.getElementById('image').files[0])
 })
 
-downloadButton.addEventListener('click', () => {
-    download();
-})
-
 function download()
 {
-    const imageList = JSON.parse(localStorage.getItem('Image Container'))
-    const fileName = imageList[0].name
-    const pathName = imageList[0].path
+    const imagesList = JSON.parse(localStorage.getItem('Image Container'))
+    const fileName = imagesList[0].name
+    const pathName = imagesList[0].path
     const aEl = document.createElement('a')
     aEl.setAttribute('href', pathName)
     aEl.setAttribute('download', fileName)
@@ -59,5 +55,10 @@ function download()
     aEl.click();
     aEl.remove();
 }
+
+downloadButton.addEventListener('click', () => {
+    download();
+})
+
 
 show()
