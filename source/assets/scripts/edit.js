@@ -48,7 +48,7 @@ function init()
             context.translate(cw, ch / cw);
             context.rotate(Math.PI / 2);
             context.drawImage(myImage, 0, 0);         
-            image.src = canvas.toDataURL("image/png");   
+            image.src = canvas.toDataURL("image/jpeg");   
             //context.restore(); 
         }
     }
@@ -78,7 +78,7 @@ function init()
         canvas.height = myImage.height;
         context.filter=brightnessStart + rangeInput.value + brightnessEnd;
         context.drawImage(myImage, 0, 0); 
-        image.src = canvas.toDataURL("image/png");
+        image.src = canvas.toDataURL("image/jpeg");
     }
 
 
@@ -99,7 +99,7 @@ function init()
             if(imageList[count].name == imageName)
             {
                 //set the data path to be the new edited image
-                imageList[count].path = canvas.toDataURL();
+                imageList[count].path = canvas.toDataURL("image/jpeg", 0.85);
                 //save to local storage
                 localStorage.setItem('Image Container', JSON.stringify(imageList));
             }
