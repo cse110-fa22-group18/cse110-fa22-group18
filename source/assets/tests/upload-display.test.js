@@ -61,11 +61,11 @@ describe("Upload and display functionality tests", () => {
         for (let i = 0; i < storedImages.length; i++) {
             const base64Path = await JSON.stringify(storedImages[i].path);
             const imgSource = await JSON.stringify(imgSources[i]);
-            if (base64Path !== imgSource) {{
+            if (base64Path !== imgSource) {
                 console.error("base64Path and imgSrc don't match at index " + i);
                 areDisplayed = false;
                 break;
-            }}   
+            }
         }
         expect(areDisplayed).toBe(true);
     }, 20000);
