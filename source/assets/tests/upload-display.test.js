@@ -1,18 +1,29 @@
 /**
+ * Performs E2E testing by automating file uploads.
+ * Uploaded images should be stored in localStorage and generate 
+ * HTML 'a > img' nests to be visually displayed.
+ * Images are deleted from both storage and HTML.
+ * 
+ * Within the display features:
+ * - (1) edit: should navigate to the edit page (page-navigate.test.js)
+ * - (2) delete: image should be removed (upload-display.test.js)
+ * - (3) download: file explorer should appear (manually tested)
+ * 
  * Sources
  * - https://github.com/puppeteer/puppeteer/blob/v1.18.1/docs/api.md
  * 
+ * run this test file using "npm test -- upload-display.test.js"
  */
+
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const imgDir = "./source/assets/test-images/";
 
-describe("Display functionality tests", () => {
+describe("Upload and display functionality tests", () => {
 
     beforeAll(async () => {
         await page.goto("https://cse110-fa22-group18.github.io/cse110-fa22-group18/source/index.html");
     });
-
     
     it("An 'anchor > img' nest should be generated for each image uploaded", async () => {
         console.log("Uploading image(s) to gallery from " + imgDir);
@@ -61,6 +72,7 @@ describe("Display functionality tests", () => {
     
     it("Checking if gallery remains populated after reload", async () => {
         await page.reload();
+        await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
         
         const storedImages = await page.evaluate(() => {
             return JSON.parse(localStorage.getItem("Image Container"));
@@ -93,10 +105,11 @@ describe("Display functionality tests", () => {
         // NOTE: dialog handle should be stated BEFORE the event triggers
         page.on('dialog', async dialog => {
             await page.waitForTimeout(500);
-            await dialog.accept("2");
+            await dialog.accept("2"); // delete
         });
         
         while ((await page.$("#gallery-container > a > img")) !== null) {
+            //  trigger prompt box
             const image = await page.$("#gallery-container > a > img");
             await image.click();
             await page.waitForTimeout(500);
@@ -114,7 +127,7 @@ describe("Display functionality tests", () => {
     
     it("Checking if gallery remains empty after reload", async () => {
         await page.reload();
-
+        await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
         // there should be no images in the gallery
         const imgSources = await page.evaluate(() => {
             const srcs = Array.from( 
@@ -124,5 +137,6 @@ describe("Display functionality tests", () => {
         });
         expect(imgSources.length).toBe(0);
     }, 10000);
+    
 });
 
