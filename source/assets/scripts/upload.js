@@ -70,7 +70,7 @@ function init(){
             //holds the value of if the file extension is correct
             let isCorrect = false;
             //set the name property of the object to the name of the image
-            newImg.name = document.getElementById('image').files[0].name;
+            newImg.name = selectedFile.name;
             //set the image path property of the object to the path of the image
             newImg.path = file.result;
             //loops through the allowed extensions
@@ -97,7 +97,7 @@ function init(){
         {
             //read the contents of the image file
             file.readAsDataURL(selectedFile); 
-            uploadForm.reset(); 
+            location.reload(); 
         } else {
         //when empty image is uploaded, let the user know
             alert('Please choose a file to upload!');
