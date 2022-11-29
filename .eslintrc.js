@@ -17,5 +17,5 @@ module.exports = {
     'prefer-destructuring': 'off',
     'no-alert': 'off',
   },
-  ignorePatterns: ['*.test.*'],
+  ignorePatterns: ['*.test.*', 'documentation/*'],
 };
