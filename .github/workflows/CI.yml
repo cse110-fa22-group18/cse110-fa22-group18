@@ -33,8 +33,20 @@ jobs:
       - name: Run ESLint
         run: npm run lint -- --fix
         
-      # Install and run Jest
-      - name: Install jest
-        run: npm install --save-dev jest
       - name: Run tests
         run: npm test
+
+      - name: Generate Documentation
+        uses: andstor/jsdoc-action@v1.2.1
+        with:
+          source_dir: ./source/assets/scripts
+          recurse: true
+          output_dir: ./documentation
+
+      - name: Commit Documentation
+        run: |
+          git config --global user.name 'Timothy Orlov'
+          git config --global user.email 'wiztim@users.noreply.github.com'
+          git add ./documentation/*
+          git commit -am "Automated documentation and ESLint fixing"
+          git push    
