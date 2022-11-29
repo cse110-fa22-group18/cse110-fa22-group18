@@ -1,3 +1,9 @@
+/**
+ * Obtains all images in local storage and displays them to the gallery html page 
+ * within anchor tags. When an image is clicked, a window prompt appears 
+ * allowing a user to edit, delete, or download the selected image.
+ * @module
+ */
 function init() {
   // gets the image container array from local storage that contains the images
   const imageList = JSON.parse(localStorage.getItem('Image Container'));

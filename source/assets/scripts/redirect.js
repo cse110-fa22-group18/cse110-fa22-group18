@@ -1,3 +1,8 @@
+/**
+ * When a users clicks on the logo, team name, "upload picture", or "view/edit gallery", 
+ * the user will be redirected to the correct page through the appropriate change to the url.
+ * @module
+ */
 function init() {
   const logo = document.getElementById('logo');
   const teamName = document.getElementById('team-name');

@@ -1,3 +1,10 @@
+/**
+ * When a user wants to edit an image, obtain the image from local storage and 
+ * display it for editing. If the user clicks the save button, the image data 
+ * in local storage is overwritten with the new edited image data and the user 
+ * is redirected to the gallery page.
+ * @module
+ */
 const brightnessStart = 'brightness(';
 const brightnessEnd = '%)';
 
@@ -32,6 +39,11 @@ function init() {
   let ch = canvas.height;
   let myImage = new Image();
 
+  /**
+   * Utilizing canvas, the image is rotated 90 degrees each time the function is called and 
+   * the image is updated to reflect the changes.
+   * @function rotate
+   */
   const rotate = function () {
     myImage.onload = function () {
       canvas.width = myImage.height;
@@ -64,6 +76,11 @@ function init() {
     image.style.filter = brightnessStart + rangeInput.value + brightnessEnd;
   });
 
+  /**
+   * Utilizing canvas, the image's brightness is adjusted according to the position 
+   * of the bar and the image is updated to reflect the changes.
+   * @function setBrightness
+   */
   function setBrightness() {
     myImage = new Image();
     myImage.src = image.src;

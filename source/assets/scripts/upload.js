@@ -1,3 +1,8 @@
+/**
+ * Allows a user to upload an image to local storage and the gallery html page while avoiding 
+ * common edge cases such as duplicate names, wrong file types, and if no image is uploaded.
+ * @module
+ */
 function init() {
   const uploadForm = document.getElementById('upload-form');
   const imageList = [];
