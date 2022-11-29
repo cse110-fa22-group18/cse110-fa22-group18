@@ -1,7 +1,29 @@
-function init ()
+
+ 
+
+async function output_image_list(){
+    return new Promise(
+        function(resolve, reject) {
+        objectStore = getObjectStore(DB_STORE_NAME, 'readwrite');
+        results = [];
+        objectStore.openCursor().onsuccess = (event) => {
+            const cursor = event.target.result;
+            if (cursor) {
+                results.push(cursor.value)
+                cursor.continue();
+            }else {
+                resolve(results);
+            }
+        };
+    });
+}
+
+
+async function init ()
 {
     //gets the image container array from local storage that contains the images
-    const imageList = JSON.parse(localStorage.getItem('Image Container'));
+    const imageList = await output_image_list();
+
     //select the element in the html that contains all of the picture tags
     const gallery = document.getElementById("gallery-container");
     //as long as the image container exists in the local storage
@@ -126,4 +148,11 @@ function init ()
     });
 }
 
-window.addEventListener('DOMContentLoaded', init);
+async function wrap_init(){
+    setTimeout(init, 500);
+}
+
+
+
+
+window.addEventListener('DOMContentLoaded', wrap_init);
