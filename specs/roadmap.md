@@ -42,24 +42,24 @@
 ## Week Nine 11/21 - 11/27
 
 - [ ] implement JSDocs or Climate for documentation
-- [ ] brightness function done and is functional within the edit page
+- [x] brightness function done and is functional within the edit page
 - [ ] create a unit test for the upload image feature
-- [ ] work with frontend and backend devs to display the image when editing
+- [x] work with frontend and backend devs to display the image when editing
 - [ ] create a unit test for displaying images in the gallery
 - [ ] create a unit test for displaying images in the editing page
 - [ ] create a unit test for correct saving of edited image to local storage
 - [ ] create a unit test for correct deletion of image from local storage and from the gallery
-- [ ] html layout finished, on both gallery and edit
-- [ ] working prototype with barebones features
-- [ ] Brightness editing
-- [ ] adding stretch features
-- [ ] add user stories and other needed elements to the repository
-- [ ] run sprint meeting
-- [ ] run retrospective meeting
+- [x] html layout finished, on both gallery and edit
+- [x] working prototype with barebones features
+- [x] Brightness editing
+- [x] adding stretch features
+- [x] run sprint meeting
+- [x] run retrospective meeting
 
 ## Week Ten 11/28 - 12/04
 
 - [ ] Testing/CI all complete
+- [ ] add user stories and other needed elements to the repository
 - [ ] Repository fully complete
 - [ ] All Github Issues resolved
 - [ ] run sprint meeting
