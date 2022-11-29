@@ -61,6 +61,8 @@
 - [x] run sprint meeting
 - [x] run retrospective meeting
 - [x] familiarize ourselves with JSDocs
+- [x] we made the gallery responsive
+- [x] we styled the edit page with the features
 
 ## Week Ten 11/28 - 12/04
 
