@@ -151,7 +151,4 @@ async function init(){
     }, 1000);
 }
 
-
-
-
 window.addEventListener('DOMContentLoaded', init);
