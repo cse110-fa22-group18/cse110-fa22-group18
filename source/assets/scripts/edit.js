@@ -95,6 +95,7 @@ function init() {
   const saveBtn = document.getElementById('save-button');
   // when the user saves the image after editing
   saveBtn.addEventListener('click', () => {
+    // if brightness value is changed
     // save the brightness value
     if (rangeInput.value != oriInput) {
       setBrightness();
