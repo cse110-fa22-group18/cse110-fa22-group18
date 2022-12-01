@@ -1,9 +1,12 @@
 /**
+ * Perform E2E Tests for brightness, 
+ * showing entire workflow, increase and decrease brightness.
  * Sources
  * - https://github.com/puppeteer/puppeteer/blob/v1.18.1/docs/api.md
  * - display.test.js done by Ira
+ * - rotate.test.js done by Jiayi
  * 
- * run this test file using "npm test -- rotate.test.js"
+ * run this test file using "npm test -- brightness.test.js"
  */
  const puppeteer = require("puppeteer");
  const fs = require("fs");
