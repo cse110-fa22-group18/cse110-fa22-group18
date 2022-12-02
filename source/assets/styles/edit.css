@@ -97,6 +97,8 @@ section.edit-section .feature-bar .feature-bar-content button.rotate-button:hove
     transition: .2s;
 }
 
+.img-container{
+}
 
 section.edit-section .feature-bar .feature-bar-content .brightness-button img {
     width: 90%;
@@ -127,9 +129,6 @@ section.edit-section .image-container {
     text-align: center;
 }
 
-section.edit-section div.image-container #img-container {
-    object-fit: contain;
-}
 
 
 /* get rid of duplicate image in canvas since it displays both image container and canvas */
