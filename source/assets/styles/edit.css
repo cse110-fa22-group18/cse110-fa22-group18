@@ -22,7 +22,6 @@ header h1 {
 
 header a {
     cursor: pointer;
-
 }
 
 
@@ -62,6 +61,7 @@ section.edit-section .feature-bar .feature-bar-content {
     justify-content: space-evenly; 
     align-items: center;
     height: 100%;
+    width: 10fr;
 }
 
 section.edit-section .feature-bar .feature-bar-content button{
@@ -117,7 +117,7 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
 
 section.edit-section .image-container {
     border-style: solid;
-    object-fit: scale-down;
+    object-fit: contain;
 
     margin-right: .5%;
     margin-top: .5%;
@@ -125,6 +125,10 @@ section.edit-section .image-container {
 
     /* margin-bottom: 10%; */
     text-align: center;
+}
+
+section.edit-section div.image-container #img-container {
+    object-fit: contain;
 }
 
 
@@ -135,16 +139,16 @@ section.edit-section #canvas {
  
 
 /* Edit Section Image Container Brightness Bar */
-section.edit-section div.container div.brightness-box label {
+section.edit-section div.image-container div.container div.brightness-box label {
     font-family: "Copperplate", Times, serif;
 }
 
-section.edit-section div.container div.brightness-box img.low-bright {
+section.edit-section div.image-container .container div.brightness-box img.low-bright {
     width: 1cm;
     height: 1cm;
 }
 
-section.edit-section div.container div.brightness-box img.high-bright {
+section.edit-section div.image-container div.container div.brightness-box img.high-bright {
     width: 1cm;
     height: 1cm;
 }
@@ -245,16 +249,16 @@ input[type=range] {
 /* Edit Section Main Image */
 
 
- section.edit-section div.edit img{
-    grid-column-start: 1;
+ section.edit-section div.image img{
+    /* grid-column-start: 1;
 
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
     object-fit: cover;
     cursor: pointer;
 
     border-radius: 4px;
-    width: 35px;
+    width: 35px; */
 }
  
 
