@@ -171,14 +171,13 @@ section.gallery-section .gallery-container img {
 
 #gallery-container img
 {
-    /* object-fit: contain; */
     max-height: 10em;
     width: auto;
     padding: 5px;
-    margin: 5px;
+    margin: 50px;
     vertical-align: middle;
-    border-radius: 5px;
-    background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
+    border-radius: 90px;
+    /* background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent; */
     cursor: pointer;
 }
 
