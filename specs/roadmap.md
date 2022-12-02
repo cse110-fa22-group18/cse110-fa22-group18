@@ -67,15 +67,15 @@
 ## Week Ten 11/28 - 12/04
 
 - [ ] Testing/CI all complete
-- [ ] finalize JSDocs for documentation
-- [ ] create end 2 end tests for brightness
+- [x] finalize JSDocs for documentation
+- [x] create end 2 end tests for brightness
 - [ ] create unit tests for non-event listener functions
 - [ ] revamp the completed end 2 end test when index.db is finished
-- [ ] add user stories and other needed elements to the repository
+- [x] add user stories and other needed elements to the repository
 - [ ] Repository fully complete
 - [ ] All Github Issues resolved
-- [ ] run sprint meeting
-- [ ] run retrospective meeting
+- [x] run sprint meeting
+- [x] run retrospective meeting
 
 ## Week Eleven 12/05 - 12/11
 
