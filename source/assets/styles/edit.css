@@ -33,7 +33,8 @@ header a {
 section.edit-section {
     
     display: grid;
-    grid-template-columns: minmax(2cm,3cm) 2fr;
+    /* grid-template-columns: minmax(2cm,3cm) 2fr; */
+    grid-template-columns: 2cm 2fr;
     background-color: #E2D1FD;
     height: 90vh;
 }
@@ -138,6 +139,9 @@ section.edit-section #canvas {
  
 
 /* Edit Section Image Container Brightness Bar */
+div.brightness-box{
+    margin-bottom: 2vh;
+}
 section.edit-section div.image-container div.container div.brightness-box label {
     font-family: "Copperplate", Times, serif;
 }
