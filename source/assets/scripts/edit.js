@@ -26,8 +26,8 @@ function init() {
       const image = new Image();
       image.src = imageList[count].path;
       image.id = 'editing';
-      image.style.maxWidth = "85vw";
-      image.style.maxHeight="79vh";
+      image.style.maxWidth = '85vw';
+      image.style.maxHeight = '79vh';
       // image.style.width = "100px";
       // image.style.width = "100px";
       container.append(image);
