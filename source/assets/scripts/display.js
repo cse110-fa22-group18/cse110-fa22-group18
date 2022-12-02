@@ -1,4 +1,4 @@
-import {addImage, putImage, deleteImage, output_image_list} from "./database.mjs"
+import {addImage, putImage, deleteImage, output_image_list, openDb} from "./database.mjs"
 /**
  * Obtains all images in local storage and displays them to the gallery html page
  * within anchor tags. When an image is clicked, a window prompt appears
