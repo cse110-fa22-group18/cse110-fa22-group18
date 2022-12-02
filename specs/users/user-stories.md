@@ -47,5 +47,5 @@
 
 ### Competitor App Analysis from a User POV
 
-**Adobe Express is a strong online photo editor but it has too many features for professional users. Sometimes, it is hard for users to find the basic editor functions.**
+**Adobe Express is a strong online photo editor but it has too many features for professional users. Sometimes, it is hard for users to find the basic editor functions.**\
 **Native Mac/Windows apps are all different - don't want to have to change workflow based on which machine.**
