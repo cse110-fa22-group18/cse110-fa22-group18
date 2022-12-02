@@ -35,7 +35,7 @@
 
 ### User Story 2
 
-**As a normal everyday user who has/takes pictures, I want to have the ability to quickly and easily do basic edits for my photo online on any device.
+**As a normal everyday user who has/takes pictures, I want to have the ability to quickly and easily do basic edits for my photo online on any device.**
 
 ### User Interview 1
 
@@ -47,5 +47,5 @@
 
 ### Competitor App Analysis from a User POV
 
-**Adobe Express is a strong online photo editor but it has too many features for professional users. Sometimes, it is hard for users to find the basic editor functions.
-**Native Mac/Windows apps are all different - don't want to have to change workflow based on which machine.
+**Adobe Express is a strong online photo editor but it has too many features for professional users. Sometimes, it is hard for users to find the basic editor functions.**
+**Native Mac/Windows apps are all different - don't want to have to change workflow based on which machine.**
