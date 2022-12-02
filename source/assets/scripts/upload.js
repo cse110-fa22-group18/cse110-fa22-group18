@@ -1,3 +1,4 @@
+
 import {addImage, putImage, deleteImage, openDb} from "./database.mjs"
  /**
  * Allows a user to upload an image to local storage and the gallery html page while avoiding
@@ -8,6 +9,7 @@ async function init(){
     const uploadForm = document.getElementById('upload-form');
     const imageList = [];
     
+
     openDb();
 
     //event listener for when use chooses and uploads an image
@@ -16,6 +18,7 @@ async function init(){
         e.preventDefault();
         const file = new FileReader();
         let newImg = {};
+
         //stores the allowed image extensions
         let allowedFileTypes = ['jpg', 'png', 'jpeg'];
 
