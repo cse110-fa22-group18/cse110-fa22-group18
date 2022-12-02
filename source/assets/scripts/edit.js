@@ -1,3 +1,5 @@
+import {addImage, putImage, deleteImage, output_image_list, openDb} from "./database.mjs"
+
 /**
  * When a user wants to edit an image, obtain the image from local storage and
  * display it for editing. If the user clicks the save button, the image data
@@ -8,13 +10,14 @@
 const brightnessStart = 'brightness(';
 const brightnessEnd = '%)';
 
-function init() {
+async function init() {
+  await openDb();
   // get the current URL of the page
   let currentURL = document.URL;
   // obtain the name of the image contained within the url
   const imageName = currentURL.substring(currentURL.indexOf('=') + 1);
   // get the image container from local storage
-  const imageList = JSON.parse(localStorage.getItem('Image Container'));
+  const imageList = await output_image_list();
   // get the container from edit.html to display the image on the edit page
   const container = document.getElementById('img-container');
   for (let count = 0; count < imageList.length; count++) {
@@ -94,23 +97,15 @@ function init() {
   // obtain the save button from edit.html
   const saveBtn = document.getElementById('save-button');
   // when the user saves the image after editing
-  saveBtn.addEventListener('click', () => {
+  saveBtn.addEventListener('click', async () => {
     // save the brightness value
     if (rangeInput.value != oriInput) {
       setBrightness();
     }
-    for (let count = 0; count < imageList.length; count++) {
-      // if the image is found in local storage,
-      // create a new image and set the source
-      // to the path in local storage, and then
-      // add it to the container in edit.html
-      if (imageList[count].name == imageName) {
-        // set the data path to be the new edited image
-        imageList[count].path = canvas.toDataURL();
-        // save to local storage
-        localStorage.setItem('Image Container', JSON.stringify(imageList));
-      }
-    }
+    let img = {};
+    img.name = imageName;
+    img.path = canvas.toDataURL();
+    await putImage(img);
     // get current url of the page
     currentURL = document.URL;
     // remove unnecessary parts of the url

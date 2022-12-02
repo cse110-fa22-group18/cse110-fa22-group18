@@ -1,20 +1,4 @@
-async function output_image_list(){
-    return new Promise(
-        function(resolve, reject) {
-        objectStore = getObjectStore(DB_STORE_NAME, 'readwrite');
-        results = [];
-        objectStore.openCursor().onsuccess = (event) => {
-            const cursor = event.target.result;
-            if (cursor) {
-                results.push(cursor.value)
-                cursor.continue();
-            }else {
-                resolve(results);
-            }
-        };
-    });
-}
-
+import {addImage, putImage, deleteImage, output_image_list} from "./database.mjs"
 /**
  * Obtains all images in local storage and displays them to the gallery html page
  * within anchor tags. When an image is clicked, a window prompt appears
@@ -55,7 +39,7 @@ async function init(){
         //everytime a user clicks a image in the gallery
         clickedElement.forEach((clickedImg) => 
         {
-            clickedImg.addEventListener('click', (event) => 
+            clickedImg.addEventListener('click', async (event) => 
             {
                 event.preventDefault();
                 //through a window prompt, ask the user if they would like to edit, 
@@ -96,16 +80,8 @@ async function init(){
                     {
                         //get the img tag from the anchor tag
                         const image = clickedImg.firstChild;
-                        for(let count = 0; count < imageList.length; count++)
-                        {
-                            //if the image exists within the local storage array
-                            if(imageList[count].path == image.src && imageList[count].name == image.title) {
-                                //remove it from the local storage array and 
-                                //set it so that it saves the deletion
-                                imageList.splice(count, 1);
-                                localStorage.setItem('Image Container', JSON.stringify(imageList));
-                            }
-                        }
+                        
+                        await deleteImage(image.title);
                         //reload the page so that the image is removed from the gallery page
                         location.reload();
                         //let the user know that the image has been deleted successfully

@@ -1,60 +1,13 @@
-
-const DB_NAME = 'imagedb';
-const DB_VERSION = 2; // Use a long long for this value (don't use a float)
-const DB_STORE_NAME = 'images';
-
-var db;
-function openDb() {
-    console.log("openDb ...");
-    var req = indexedDB.open(DB_NAME);
-    req.onsuccess = function (evt) {
-      // Equal to: db = req.result;
-      db = this.result;
-      console.log("openDb DONE");
-    };
-    req.onerror = function (evt) {
-      console.error("openDb:", evt.target.errorCode);
-    };
-
-    req.onupgradeneeded = function (evt) {
-      console.log("openDb.onupgradeneeded");
-      var store = evt.currentTarget.result.createObjectStore(
-        DB_STORE_NAME, { keyPath: 'name'});
-    };
-}
-
-/**
- * @param {string} store_name
- * @param {string} mode either "readonly" or "readwrite"
- */
-function getObjectStore(store_name, mode) {
-    var tx = db.transaction(store_name, mode);
-    return tx.objectStore(store_name);
-}
-
-function clearObjectStore() {
-    var store = getObjectStore(DB_STORE_NAME, 'readwrite');
-    var req = store.clear();
-    req.onsuccess = function(evt) {
-      displayActionSuccess("Store cleared");
-      displayPubList(store);
-    };
-    req.onerror = function (evt) {
-      console.error("clearObjectStore:", evt.target.errorCode);
-      displayActionFailure(this.error);
-    };
-}
-
-/**
+import {addImage, putImage, deleteImage, openDb} from "./database.mjs"
+ /**
  * Allows a user to upload an image to local storage and the gallery html page while avoiding
  * common edge cases such as duplicate names, wrong file types, and if no image is uploaded.
  * @module
  */
-function init(){
+async function init(){
     const uploadForm = document.getElementById('upload-form');
     const imageList = [];
-    const request = window.indexedDB.open("images", 3);
-
+    
     openDb();
 
     //event listener for when use chooses and uploads an image
@@ -63,7 +16,6 @@ function init(){
         e.preventDefault();
         const file = new FileReader();
         let newImg = {};
-        var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
         //stores the allowed image extensions
         let allowedFileTypes = ['jpg', 'png', 'jpeg'];
 
@@ -71,7 +23,7 @@ function init(){
 
         
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', function handleEvent(event) 
+        file.addEventListener('load', async function handleEvent(event) 
         {
             //holds the value of if the file extension is correct
             let isCorrect = false;
@@ -96,14 +48,14 @@ function init(){
                 alert('Invalid file type! We only accept jpeg, jpg, and PNG file types.');
                 return;
             }
-            addImage(newImg);
+            await addImage(newImg);
         }); 
 
         if(selectedFile)
         {
             //read the contents of the image file
             file.readAsDataURL(selectedFile); 
-            uploadForm.reset(); 
+            location.reload(); 
         } else {
         //when empty image is uploaded, let the user know
             alert('Please choose a file to upload!');
@@ -111,16 +63,5 @@ function init(){
     });
 }
 
-function addImage(newImg){
-    var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
-    const request = imageStore.add(newImg);
-    request.onerror = (event) => { //name found in db
-        newImg.name += "(copy)";
-        addImage(newImg);
-    };
-    request.onsuccess = (event) => {
-        console.log(newImg.name + " added to db");
-    };
-}
 
 window.addEventListener('DOMContentLoaded', init);
