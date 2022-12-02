@@ -10,7 +10,7 @@
  * Sources
  * - https://github.com/puppeteer/puppeteer/blob/v1.18.1/docs/api.md
  * 
- * run this test file using "npm test -- page-navigate.test.js"
+ * Run this test file using "npm test -- page-navigate.test.js"
  */
 
  const puppeteer = require("puppeteer");
@@ -24,20 +24,26 @@
      });
 
      it("Navigate to edit page", async () => {
-        console.log("Uploading an image to gallery from " + imgDir);
+        console.log("Uploading image(s) to gallery from " + imgDir);
         const directory = fs.opendirSync(imgDir);
-        let file = directory.readSync();
-        const uploadHandle = await page.$("input[type=file]");
-        const imgPath = imgDir + file.name;
-        await uploadHandle.uploadFile(imgPath);
-        await page.evaluate(() => document.querySelector("a[href='#upload-section']").click());
-        await page.waitForTimeout(500); // for visual confirmation of file selection
-        await page.evaluate(() => document.getElementById("upload-button").click());
-        await page.waitForTimeout(500); // timeout for upload process to complete
-        await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
-        await page.waitForTimeout(500); // for visual confirmation of image display
+        try {
+            let file = directory.readSync();
+            const uploadHandle = await page.$("input[type=file]");
+            const imgPath = imgDir + file.name;
+            await uploadHandle.uploadFile(imgPath);
+            await page.evaluate(() => document.querySelector("a[href='#upload-section']").click());
+            await page.waitForTimeout(500); // for visual confirmation of file selection
+            await page.evaluate(() => document.getElementById("upload-button").click());
+            await page.waitForTimeout(500); // timeout for upload process to complete
+            await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
+            await page.waitForTimeout(500); // for visual confirmation of image display
+        } catch(error)  {
+            throw error;
+        } finally {
+            directory.close();
+        }
 
-        // NOTE: dialog handle should be stated BEFORE the event triggers
+        // input edit option in prompt box
         page.on('dialog', async dialog => {
             await page.waitForTimeout(500);
             await dialog.accept("1"); // edit

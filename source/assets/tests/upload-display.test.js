@@ -12,7 +12,7 @@
  * Sources
  * - https://github.com/puppeteer/puppeteer/blob/v1.18.1/docs/api.md
  * 
- * run this test file using "npm test -- upload-display.test.js"
+ * Run this test file using "npm test -- upload-display.test.js"
  */
 
 const puppeteer = require("puppeteer");
@@ -28,23 +28,30 @@ describe("Upload and display functionality tests", () => {
     it("An 'anchor > img' nest should be generated for each image uploaded", async () => {
         console.log("Uploading image(s) to gallery from " + imgDir);
         const directory = fs.opendirSync(imgDir);
-        let file;
-        while ((file = directory.readSync()) !== null) {
-            // NOTE: requery upload handle after every upload (can't reuse same handle for some reason)
-            const uploadHandle = await page.$("input[type=file]");
-            const imgPath = imgDir + file.name;
-            await uploadHandle.uploadFile(imgPath);
-            await page.evaluate(() => document.querySelector("a[href='#upload-section']").click());
-            await page.waitForTimeout(500); // for visual confirmation of file selection
-            await page.evaluate(() => document.getElementById("upload-button").click());
-            await page.waitForTimeout(500); // timeout for upload process to complete
-            await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
-            await page.waitForTimeout(500); // for visual confirmation of image display
+        try {
+            while ((file = directory.readSync()) !== null) {
+                // NOTE: requery upload handle after every upload (can't reuse same handle for some reason)
+                const uploadHandle = await page.$("input[type=file]");
+                const imgPath = imgDir + file.name;
+                await uploadHandle.uploadFile(imgPath);
+                await page.evaluate(() => document.querySelector("a[href='#upload-section']").click());
+                await page.waitForTimeout(500); // for visual confirmation of file selection
+                await page.evaluate(() => document.getElementById("upload-button").click());
+                await page.waitForTimeout(500); // timeout for upload process to complete
+                await page.evaluate(() => document.querySelector("a[href='#gallery-section']").click());
+                await page.waitForTimeout(500); // for visual confirmation of image display
+            }
+        } catch(error) {
+            throw error;
+        } finally {
+            directory.close();
         }
         
+        // fetch items in localStorage
         const storedImages = await page.evaluate(() => {
             return JSON.parse(localStorage.getItem("Image Container"));
         });
+        // fetch img tags in HTML
         const imgSources = await page.evaluate(() => {
             const srcs = Array.from( 
                 document.querySelectorAll("#gallery-container > a > img")).map((image) => image.getAttribute("src")
@@ -52,11 +59,10 @@ describe("Upload and display functionality tests", () => {
             return srcs;
         });
 
-        console.log("Number of images displayed: " + imgSources.length);
         // number of images in localStorage should be equivalent to number of images displayed
         expect(imgSources.length).toBe(storedImages.length);
 
-        // check if image path in localStorage mataches the img src attribute
+        // check if image paths in localStorage mataches the img src attributes
         let areDisplayed = true;
         for (let i = 0; i < storedImages.length; i++) {
             const base64Path = await JSON.stringify(storedImages[i].path);
@@ -103,6 +109,7 @@ describe("Upload and display functionality tests", () => {
     
     it("No 'a > img' nests should exist after each image is deleted", async () => {
         // NOTE: dialog handle should be stated BEFORE the event triggers
+        // input delete option in prompt box
         page.on('dialog', async dialog => {
             await page.waitForTimeout(500);
             await dialog.accept("2"); // delete
