@@ -9,7 +9,7 @@ async function init(){
     setTimeout(async ()=>{
         //gets the image container array from local storage that contains the images
         const imageList = await output_image_list();
-
+        await openDb();
         //select the element in the html that contains all of the picture tags
         const gallery = document.getElementById("gallery-container");
         //as long as the image container exists in the local storage

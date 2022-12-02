@@ -9,8 +9,7 @@ async function init(){
     const uploadForm = document.getElementById('upload-form');
     const imageList = [];
     
-
-    openDb();
+    await openDb();
 
     //event listener for when use chooses and uploads an image
     uploadForm.addEventListener('submit', (e) => 
