@@ -23,6 +23,15 @@ async function init(){
 
         const selectedFile = document.getElementById('image').files[0];
 
+        if(selectedFile)
+        {
+            //read the contents of the image file
+            file.readAsDataURL(selectedFile); 
+            
+        } else {
+        //when empty image is uploaded, let the user know
+            alert('Please choose a file to upload!');
+        } 
         
         //event listener for when the form is submitted and the page loads
         file.addEventListener('load', async function handleEvent(event) 
@@ -50,18 +59,14 @@ async function init(){
                 alert('Invalid file type! We only accept jpeg, jpg, and PNG file types.');
                 return;
             }
+            
             await addImage(newImg);
+            //
+            document.location.reload();
+            
         }); 
 
-        if(selectedFile)
-        {
-            //read the contents of the image file
-            file.readAsDataURL(selectedFile); 
-            location.reload(); 
-        } else {
-        //when empty image is uploaded, let the user know
-            alert('Please choose a file to upload!');
-        }    
+           
     });
 }
 

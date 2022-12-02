@@ -28,7 +28,8 @@ export async function openDb() {
 
 export async function addImage(newImg){
     return new Promise( function(resolve, reject) {
-        var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
+        const tx = db.transaction(DB_STORE_NAME, 'readwrite');
+        const imageStore = tx.objectStore(DB_STORE_NAME); 
         const request = imageStore.add(newImg);
         request.onerror = (event) => { //name found in db
             newImg.name += "(copy)";
@@ -36,38 +37,46 @@ export async function addImage(newImg){
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
-            resolve();
         };
+        tx.oncomplete = (event) =>{
+            resolve();
+        }
     });
 }
 
 export async function deleteImage(img_name){
     return new Promise( function(resolve, reject) {
-        var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
+        const tx = db.transaction(DB_STORE_NAME, 'readwrite');
+        const imageStore = tx.objectStore(DB_STORE_NAME); 
         const request = imageStore.delete(img_name);
         request.onerror = (event) => { //name found in db
             console.error("error deleting " + img_name + " from db")
-            reject();
+            reject("error");
         };
         request.onsuccess = (event) => {
             console.log(img_name + " deleted from db");
-            resolve();
         };
+        tx.oncomplete = (event) =>{
+            resolve();
+        }
     });
 }
 
 export async function putImage(newImg){
     return new Promise( function(resolve, reject) {
-        var imageStore = getObjectStore(DB_STORE_NAME, 'readwrite');
+        const tx = db.transaction(DB_STORE_NAME, 'readwrite');
+        const imageStore = tx.objectStore(DB_STORE_NAME); 
         const request = imageStore.put(newImg);
         request.onerror = (event) => { //name found in db
             newImg.name += "(copy)";
-            addImage(newImg);
+            reject();
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
-            resolve();
         };  
+        tx.oncomplete = (event) =>{
+            resolve();
+        }
     });
 }
 
