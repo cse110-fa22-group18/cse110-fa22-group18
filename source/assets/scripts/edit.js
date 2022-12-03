@@ -29,6 +29,8 @@ async function init() {
       const image = new Image();
       image.src = imageList[count].path;
       image.id = 'editing';
+      image.style.maxWidth = '100%';
+      image.style.maxHeight = '80vh';
       // image.style.width = "100px";
       // image.style.width = "100px";
       container.append(image);
@@ -98,6 +100,7 @@ async function init() {
   const saveBtn = document.getElementById('save-button');
   // when the user saves the image after editing
   saveBtn.addEventListener('click', async () => {
+    // if brightness value is changed
     // save the brightness value
     if (rangeInput.value != oriInput) {
       setBrightness();

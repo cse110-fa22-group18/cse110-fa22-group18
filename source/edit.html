@@ -42,41 +42,42 @@
         <div class = 'feature-bar'> 
 
             <div class = "feature-bar-content">
-                <!-- <div class="rotate-button"> -->
-                    <button class = "rotate-button" id = "rotate-button">
-                        <img src = "./assets/images/rotate.png" alt="rotate image">
-                    </button>
-                <!-- </div> -->
-                <!-- <div class = "brightness-button">  -->
-                    <button class = "brightness-button">
-                        <img src = "./assets/images/brightness.png" alt="brightness image">
-                    </button>
+                <button class = "rotate-button" id = "rotate-button">
+                    <img src = "./assets/images/rotate.png" alt="rotate image">
+                </button>
+
+                <button class = "brightness-button">
+                    <img src = "./assets/images/brightness.png" alt="brightness image">
+                </button>
                 <!-- </div> -->
                 <button class = "save-button" id = "save-button">Save</button>
             </div>
         </div>
 
-
         <!-- selected gallery image to be edited                                                    MANNYYYYYYYYYYY done --> 
         <div class = "image-container">
-            <canvas id="canvas" width="1000" height="1000"></canvas>
+            <canvas id="canvas" width="100vw" height="90vh"></canvas>
             <div id = "img-container"></div>
-            
-            <!-- brightness slider -->
-            <div class="container">
-                <div class="brightness-box">
-                <i class="far fa-sun"></i>
-                <input type="range" id="range" min="10" max="200" value="100">
-                <i class="fas fa-sun"></i>
-                </div>
-            </div>
-            </div>
+        </div>
+
+    </section>
 
 
 
     
-        
-    </section>
+    <!-- brightness slider -->
+    <div class="container">
+        <div class="brightness-box">
+            <i class="far-fa-sun"></i>
+            <img class="low-bright" src="assets/images/low-brightness.png" alt="High Brightness" />
+            <input type="range" id="range" min="10" max="200" value="100">
+            <!-- <label for="range">BRIGHTNESS</label> -->
+            <img class="high-bright" src="assets/images/high-brightness.png" alt="High Brightness" />
+            <i class="far-fa-sun"></i>
+        </div>
+    </div>
+
+
 </body>
 
  <!-- menu buttons -->
