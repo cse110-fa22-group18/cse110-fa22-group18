@@ -187,10 +187,12 @@ section.gallery-section > h1 {
 
 #gallery-container img
 {
-    height: 33vh;
-    width: 33vh;
-    padding: 5%;
-    margin: 5%;
+    min-height: 33vh;
+    min-width: 33vh;
+    max-width: 100vh;
+    max-height: 100vh;
+    padding: auto;
+    margin: 2.5em;
     vertical-align: middle;
     border-radius: 50px;
     background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
