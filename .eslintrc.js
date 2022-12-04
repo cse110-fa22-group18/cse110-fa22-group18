@@ -11,15 +11,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   settings: {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".mjs"
-        ]
-      }
-    }
+    'import/ignore': ['./database.mjs']
   },
   rules: {
     'no-plusplus': 'off',
