@@ -117,23 +117,17 @@ section.upload-section button#upload-button:hover{
 }
 
 /* Gallery Section */
-
 section.gallery-section {
-   background-color: white; 
-   display: grid;
-   /* grid-template-columns: 1fr 1fr 1fr; */
-   /* column-gap: 3em; */
-   /* row-gap: 3em; */
-   /* padding: 2em; */
-
-}
+    background-color: white; 
+    padding-left: 5%;
+    padding-right: 5%;
+ }
 
 section.gallery-section > h1 {
     color: #652CB3;
     padding: 25px;
     font-size: 50px;
     text-align: center;
-    /* grid-column: 1 / 4; */
 }
 
 section.gallery-section .gallery-container {
@@ -170,7 +164,7 @@ section.gallery-section .gallery-container img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #gallery-container img
