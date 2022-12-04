@@ -1,12 +1,14 @@
+import { deleteImage, outputImageList, openDb } from './database.mjs';
 /**
  * Obtains all images in local storage and displays them to the gallery html page
  * within anchor tags. When an image is clicked, a window prompt appears
  * allowing a user to edit, delete, or download the selected image.
  * @module
  */
-function init() {
+async function init() {
+  await openDb();
   // gets the image container array from local storage that contains the images
-  const imageList = JSON.parse(localStorage.getItem('Image Container'));
+  const imageList = await outputImageList();
   // select the element in the html that contains all of the picture tags
   const gallery = document.getElementById('gallery-container');
   // as long as the image container exists in the local storage
@@ -32,7 +34,7 @@ function init() {
   const clickedElement = document.getElementById('gallery-container').querySelectorAll('a');
   // everytime a user clicks a image in the gallery
   clickedElement.forEach((clickedImg) => {
-    clickedImg.addEventListener('click', (event) => {
+    clickedImg.addEventListener('click', async (event) => {
       event.preventDefault();
       // through a window prompt, ask the user if they would like to edit,
       // delete, or download the clicked image
@@ -44,7 +46,6 @@ function init() {
         if (askUser == '1' || askUser.toLowerCase() == 'edit') {
           // get the current page URL
           let currentURL = document.URL;
-          currentURL = currentURL.substring(0, currentURL.indexOf('#'));
           // remove index.html from url
           currentURL = currentURL.replace('index.html', '');
           // add in edit.html at the end to change link
@@ -68,15 +69,8 @@ function init() {
         } else if (askUser == '2' || askUser.toLowerCase() == 'delete') {
           // get the img tag from the anchor tag
           const image = clickedImg.firstChild;
-          for (let count = 0; count < imageList.length; count++) {
-            // if the image exists within the local storage array
-            if (imageList[count].path == image.src && imageList[count].name == image.title) {
-              // remove it from the local storage array and
-              // set it so that it saves the deletion
-              imageList.splice(count, 1);
-              localStorage.setItem('Image Container', JSON.stringify(imageList));
-            }
-          }
+
+          await deleteImage(image.title);
           // reload the page so that the image is removed from the gallery page
           location.reload();
           // let the user know that the image has been deleted successfully
