@@ -10,21 +10,20 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  settings: {
-    'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] }
-    }
-  },
   rules: {
     'no-plusplus': 'off',
     eqeqeq: 'off',
     'no-restricted-globals': 'off',
     'prefer-destructuring': 'off',
     'no-alert': 'off',
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      mjs: 'never'
-    }]
+    'import/extensions': [
+      'error', 
+      'always', 
+      {
+        'js': 'never',
+        'mjs': 'never'
+      }
+    ]
   },
   ignorePatterns: ['*.test.*', 'documentation/*'],
 };

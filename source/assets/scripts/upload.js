@@ -1,5 +1,5 @@
 
-import {addImage, putImage, deleteImage, openDb} from "./database.mjs"
+import {addImage, openDb} from "./database.mjs"
  /**
  * Allows a user to upload an image to local storage and the gallery html page while avoiding
  * common edge cases such as duplicate names, wrong file types, and if no image is uploaded.
@@ -7,7 +7,6 @@ import {addImage, putImage, deleteImage, openDb} from "./database.mjs"
  */
 async function init(){
     const uploadForm = document.getElementById('upload-form');
-    const imageList = [];
     
     await openDb();
 
@@ -34,7 +33,7 @@ async function init(){
         } 
         
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', async (event) =>
+        file.addEventListener('load', async () =>
         {
             //holds the value of if the file extension is correct
             let isCorrect = false;
