@@ -1,4 +1,4 @@
-import {putImage, outputImageList, openDb} from "./database.mjs"
+import { putImage, outputImageList, openDb } from './database.mjs';
 
 /**
  * When a user wants to edit an image, obtain the image from local storage and
@@ -103,7 +103,7 @@ async function init() {
     if (rangeInput.value != oriInput) {
       setBrightness();
     }
-    let img = {};
+    const img = {};
     img.name = imageName;
     img.path = canvas.toDataURL();
     await putImage(img);
