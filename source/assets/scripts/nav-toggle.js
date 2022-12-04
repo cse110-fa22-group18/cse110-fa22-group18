@@ -1,3 +1,8 @@
+/**
+ * For smaller screen sizes, navigation bar turns into a toggle button which will display
+ * navigation bar options when clicked.
+ * @module
+ */
 function init() {
 
     const navToggle = document.getElementsByClassName('nav-toggle')[0];
