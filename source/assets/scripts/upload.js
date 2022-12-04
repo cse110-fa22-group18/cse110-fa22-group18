@@ -12,7 +12,7 @@ async function init(){
     await openDb();
 
     //event listener for when use chooses and uploads an image
-    uploadForm.addEventListener('submit', function (e) 
+    uploadForm.addEventListener('submit', (e) => 
     {
         e.preventDefault();
         const file = new FileReader();
@@ -34,7 +34,7 @@ async function init(){
         } 
         
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', async function handleEvent(event)
+        file.addEventListener('load', async (event) =>
         {
             //holds the value of if the file extension is correct
             let isCorrect = false;

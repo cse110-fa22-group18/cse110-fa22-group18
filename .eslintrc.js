@@ -10,6 +10,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  settings: {
+    'import/resolver': {
+      node: { extensions: ['.js', '.mjs'] }
+    }
+  },
   rules: {
     'no-plusplus': 'off',
     eqeqeq: 'off',
