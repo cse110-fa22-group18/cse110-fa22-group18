@@ -1,5 +1,5 @@
 
-import {addImage, openDb} from "./database.mjs"
+import {addImage, openDb} from "./database.js"
  /**
  * Allows a user to upload an image to local storage and the gallery html page while avoiding
  * common edge cases such as duplicate names, wrong file types, and if no image is uploaded.

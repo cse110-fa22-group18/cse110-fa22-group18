@@ -10,9 +10,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  settings: {
-    'import/ignore': ['./database.mjs']
-  },
   rules: {
     'no-plusplus': 'off',
     eqeqeq: 'off',
