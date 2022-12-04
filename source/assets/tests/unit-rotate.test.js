@@ -1,4 +1,4 @@
-const functions = require('../tests/rotate-for-test.js');
+const functions = require('../tests/rotate.js');
 
 const image = "./source/assets/test-images/elden_ring.jpeg";
 
