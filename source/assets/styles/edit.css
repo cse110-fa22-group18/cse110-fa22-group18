@@ -8,6 +8,7 @@ header a {
     cursor: pointer;
 }
 
+/*Smaller screen responsiveness */
 @media (max-width:700px) {
     header h1.edit-label {
         display: flex;
