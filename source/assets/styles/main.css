@@ -185,6 +185,10 @@ section.gallery-section > h1 {
     justify-content: center;
 }
 
+#gallery-container a {
+    margin: 2.5em;
+}
+
 #gallery-container img
 {
     min-height: 33vh;
@@ -192,7 +196,6 @@ section.gallery-section > h1 {
     max-width: 100vh;
     max-height: 100vh;
     padding: auto;
-    margin: 2.5em;
     vertical-align: middle;
     border-radius: 50px;
     background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
