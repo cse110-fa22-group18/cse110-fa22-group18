@@ -197,6 +197,12 @@ section.gallery-section > h1 {
 
 }
 
+#gallery-container img:hover
+{
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
 /* Footer Section */
 section.footer-section {
     display: flex;
