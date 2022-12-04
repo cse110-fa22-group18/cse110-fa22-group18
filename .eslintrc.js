@@ -16,6 +16,7 @@ module.exports = {
     'no-restricted-globals': 'off',
     'prefer-destructuring': 'off',
     'no-alert': 'off',
+    'import/extensions': 'off',
   },
   ignorePatterns: ['*.test.*', 'documentation/*'],
 };
