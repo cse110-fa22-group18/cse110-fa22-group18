@@ -169,21 +169,20 @@ section.gallery-section .gallery-container img {
 
 #gallery-container img
 {
-    max-height: 10em;
-    width: auto;
-    padding: 5px;
-    margin: 50px;
+    height: 33vh;
+    width: 33vh;
+    padding: 5%;
+    margin: 5%;
     vertical-align: middle;
-    border-radius: 90px;
-    /* background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent; */
+    border-radius: 50px;
+    background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
+
 }
 
 
 
 /* Footer Section */
-
-
 section.footer-section {
     display: flex;
     justify-content: center;
