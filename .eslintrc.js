@@ -11,11 +11,15 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   settings: {
-    "import/extensions": [
-      ".js",
-      ".jsx",
-      ".mjs"
-    ]
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".mjs"
+        ]
+      }
+    }
   },
   rules: {
     'no-plusplus': 'off',
