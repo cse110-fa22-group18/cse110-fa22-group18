@@ -11,9 +11,11 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   settings: {
-    "import/resolver": {
-      node: { extensions: [ ".js", ".mjs" ] }
-    }
+    "import/extensions": [
+      ".js",
+      ".jsx",
+      ".mjs"
+    ]
   },
   rules: {
     'no-plusplus': 'off',
@@ -21,14 +23,6 @@ module.exports = {
     'no-restricted-globals': 'off',
     'prefer-destructuring': 'off',
     'no-alert': 'off',
-    'import/extensions': [
-      'error', 
-      'always', 
-      {
-        "js": 'never',
-        "mjs": 'never'
-      }
-    ]
   },
   ignorePatterns: ['*.test.*', 'documentation/*'],
 };
