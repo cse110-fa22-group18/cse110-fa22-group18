@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <script type="module" src="./assets/scripts/edit.js"></script>
     <script type="module" src="./assets/scripts/redirect.js"></script>
+    <script type="module" src="./assets/scripts/nav-toggle.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +13,8 @@
     <title>Eighteam Photoshop</title>
 </head>
 
-
-
-
-<!-- edit section -->
 <body>
     <header>
-        <!-- left div so css pushes it left -->
         <div class = "team-brand">
             <img src="./assets/images/team-logo.png" alt="" class="logo" id="logo">
             <a>
@@ -25,10 +22,14 @@
             </a>
         </div>
 
-        <!-- edit label in the middle -->
-        <h1>Edit</h1>
+        <h1 class = "edit-label">Edit</h1>
 
-        <!-- right div so css pushes it right -->
+        <a href="#" class="nav-toggle" id="navtoggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
         <nav class = "main-nav">
             <ul class ="nav-links">
                 <li><a href="#upload-section" id="red-upload"><b>Upload Picture</b></a></li>
@@ -49,12 +50,10 @@
                 <button class = "brightness-button">
                     <img src = "./assets/images/brightness.png" alt="brightness image">
                 </button>
-                <!-- </div> -->
                 <button class = "save-button" id = "save-button">Save</button>
             </div>
         </div>
 
-        <!-- selected gallery image to be edited                                                    MANNYYYYYYYYYYY done --> 
         <div class = "image-container">
             <canvas id="canvas" width="100vw" height="90vh"></canvas>
             <div id = "img-container"></div>
@@ -62,33 +61,18 @@
 
     </section>
 
-
-
-    
-    <!-- brightness slider -->
     <div class="container">
         <div class="brightness-box">
             <i class="far-fa-sun"></i>
             <img class="low-bright" src="assets/images/low-brightness.png" alt="High Brightness" />
             <input type="range" id="range" min="10" max="200" value="100">
-            <!-- <label for="range">BRIGHTNESS</label> -->
             <img class="high-bright" src="assets/images/high-brightness.png" alt="High Brightness" />
             <i class="far-fa-sun"></i>
         </div>
     </div>
 
-
 </body>
-
- <!-- menu buttons -->
-        <!-- <div class="edit">
-            <img src = "./assets/images/triple-bar-menu.png">
-        </div>
-    
-    
-        <div class="edit2">
-            <img src = "./assets/images/triple-bar-menu.png">
-        </div> -->
+</html>
     
 
         

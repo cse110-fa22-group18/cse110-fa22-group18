@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-* {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
-
-
-header .team-brand .edit-label {
-    justify-content: center;
-
-}
-
-
+/* Edit navigation bar*/
 header h1 {
     color: #652CB3;
 }
@@ -24,16 +8,19 @@ header a {
     cursor: pointer;
 }
 
-
+/*Smaller screen responsiveness */
+@media (max-width:700px) {
+    header h1.edit-label {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 /* Edit section */
-
-
-
 section.edit-section {
     
     display: grid;
-    /* grid-template-columns: minmax(2cm,3cm) 2fr; */
     grid-template-columns: 2cm 2fr;
     grid-template-rows: 100%;
     background-color: #E2D1FD;
@@ -42,7 +29,6 @@ section.edit-section {
 
 
 /* Edit Section Feature Bar */
-
 section.edit-section .feature-bar {
     background-color: white;
 
@@ -100,7 +86,6 @@ section.edit-section .feature-bar .feature-bar-content button.rotate-button:hove
 }
 
 
-
 section.edit-section .feature-bar .feature-bar-content .brightness-button img {
     width: 90%;
     height: 90%;
@@ -114,25 +99,11 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
 }
 
 
-
 /* Edit Section Image Container */
-
-
 section.edit-section div.image-container {
     border-style: solid;
+    border-color: white;
     object-fit: contain;
-
-    /* margin-right: .5%; */
-    /* margin-left: .5%; */
-    /* margin-top: 0%;
-    margin-bottom: 0%; */
-
-    /* display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 30% 0;
-    vertical-align: middle; */
 
     display: flex;
     flex-direction: column;
@@ -186,7 +157,6 @@ input[type=range] {
     width: 100%;
     height: 10px;
     cursor: pointer;
-    /* animate: 0.2s; */
     box-shadow: 1px 1px 1px #000000;
     background: #3071A9;
     border-radius: 5px;
@@ -204,26 +174,6 @@ input[type=range] {
     margin-top: -11px;
   }
   
-
-
-
-/* Edit Section Main Image */
-
-
- section.edit-section div.image img{
-    /* grid-column-start: 1;
-
-    width: 10%;
-    height: 10%;
-    object-fit: cover;
-    cursor: pointer;
-
-    border-radius: 4px;
-    width: 35px; */
-}
- 
-
-
  /* Gallery title styling */
  section.edit-section > h1 {
      color: #652CB3;
