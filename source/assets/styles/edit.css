@@ -121,9 +121,15 @@ section.edit-section #canvas {
 
 /* Edit Section Image Container Brightness Bar */
 div.container {
+    display: none;
     position: sticky; 
     text-align: center;
     bottom: 0;
+}
+
+div.container.active {
+    display: grid;
+    margin-left: 10%;
 }
 
 div.container div.brightness-box label {
