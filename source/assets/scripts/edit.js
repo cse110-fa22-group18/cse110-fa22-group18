@@ -52,13 +52,11 @@ function init() {
       canvas.height = myImage.width;
       cw = canvas.width;
       ch = canvas.height;
-      // context.save();
 
       context.translate(cw, ch / cw);
       context.rotate(Math.PI / 2);
       context.drawImage(myImage, 0, 0);
       image.src = canvas.toDataURL('image/png');
-      // context.restore();
     };
   };
 
