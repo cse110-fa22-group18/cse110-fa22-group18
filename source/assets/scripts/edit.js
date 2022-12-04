@@ -1,4 +1,4 @@
-import {putImage, outputImageList, openDb} from "./database.js"
+import {putImage, outputImageList, openDb} from "./database.mjs"
 
 /**
  * When a user wants to edit an image, obtain the image from local storage and
