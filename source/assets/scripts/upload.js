@@ -12,7 +12,7 @@ async function init(){
     await openDb();
 
     //event listener for when use chooses and uploads an image
-    uploadForm.addEventListener('submit', (e) => 
+    uploadForm.addEventListener('submit', function (e) 
     {
         e.preventDefault();
         const file = new FileReader();
