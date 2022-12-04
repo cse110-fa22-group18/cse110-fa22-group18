@@ -1,6 +1,6 @@
 /**
- * For smaller screen sizes, navigation bar turns into a toggle button which will display
- * navigation bar options when clicked.
+ * When brightness button is clicked, the brightness bar will appear. If the user clicks the button
+ * again then the button dissapears.
  * @module
  */
  function init() {
