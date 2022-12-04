@@ -102,7 +102,7 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
 /* Edit Section Image Container */
 section.edit-section div.image-container {
     border-style: solid;
-    border-color: white;
+    border-color: #E2D1FD;
     object-fit: contain;
 
     display: flex;

@@ -186,7 +186,7 @@ section.gallery-section > h1 {
 }
 
 #gallery-container a {
-    margin: 0%;
+    margin: 2.5em;
     padding: 2.5em;
 }
 
@@ -194,13 +194,12 @@ section.gallery-section > h1 {
 {
     min-height: 33vh;
     min-width: 33vh;
-    max-width: 100vh;
+    max-width: 85vh;
     max-height: 100vh;
     margin: 0px;
     padding: 0%;
     vertical-align: middle;
     border-radius: 50px;
-    background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
 
 }
