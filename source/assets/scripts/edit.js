@@ -1,4 +1,4 @@
-import {addImage, putImage, deleteImage, output_image_list, openDb} from "./database.mjs"
+import {putImage, outputImageList, openDb} from "./database.mjs"
 
 /**
  * When a user wants to edit an image, obtain the image from local storage and
@@ -17,7 +17,7 @@ async function init() {
   // obtain the name of the image contained within the url
   const imageName = currentURL.substring(currentURL.indexOf('=') + 1);
   // get the image container from local storage
-  const imageList = await output_image_list();
+  const imageList = await outputImageList();
   // get the container from edit.html to display the image on the edit page
   const container = document.getElementById('img-container');
   for (let count = 0; count < imageList.length; count++) {

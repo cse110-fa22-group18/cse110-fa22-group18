@@ -31,9 +31,10 @@ export async function addImage(newImg){
         const tx = db.transaction(DB_STORE_NAME, 'readwrite');
         const imageStore = tx.objectStore(DB_STORE_NAME); 
         const request = imageStore.add(newImg);
-        request.onerror = (event) => { //name found in db
+        request.onerror = async (event) => { //name found in db
             newImg.name += "(copy)";
-            addImage(newImg);
+            await addImage(newImg);
+            document.location.reload();
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
@@ -69,7 +70,7 @@ export async function putImage(newImg){
         const request = imageStore.put(newImg);
         request.onerror = (event) => { //name found in db
             newImg.name += "(copy)";
-            reject();
+            //reject();
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
@@ -80,7 +81,7 @@ export async function putImage(newImg){
     });
 }
 
-export async function output_image_list(){
+export async function outputImageList(){
     return new Promise(
         function(resolve, reject) {
         var objectStore = getObjectStore(DB_STORE_NAME, 'readwrite');

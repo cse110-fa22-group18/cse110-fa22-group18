@@ -1,4 +1,4 @@
-import {addImage, putImage, deleteImage, output_image_list, openDb} from "./database.mjs"
+import {deleteImage, outputImageList, openDb} from "./database.mjs"
 /**
  * Obtains all images in local storage and displays them to the gallery html page
  * within anchor tags. When an image is clicked, a window prompt appears
@@ -8,7 +8,7 @@ import {addImage, putImage, deleteImage, output_image_list, openDb} from "./data
 async function init(){
     await openDb();
     //gets the image container array from local storage that contains the images
-    const imageList = await output_image_list();
+    const imageList = await outputImageList();
     //select the element in the html that contains all of the picture tags
     const gallery = document.getElementById("gallery-container");
     //as long as the image container exists in the local storage

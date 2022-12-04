@@ -34,12 +34,15 @@ async function init(){
         } 
         
         //event listener for when the form is submitted and the page loads
-        file.addEventListener('load', async function handleEvent(event) 
+        file.addEventListener('load', async function handleEvent(event)
         {
             //holds the value of if the file extension is correct
             let isCorrect = false;
             //set the name property of the object to the name of the image
             newImg.name = selectedFile.name;
+            //removes percentages and underscores from image name
+            newImg.name = (newImg.name).replaceAll('_', '');
+            newImg.name = (newImg.name).replaceAll('%', '');
             //set the image path property of the object to the path of the image
             newImg.path = file.result;
             //loops through the allowed extensions
