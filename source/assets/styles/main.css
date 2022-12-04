@@ -10,7 +10,6 @@
 }
 
 /* Header */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -66,7 +65,6 @@ header a {
 
 
 /* Upload Section */
-
 section.upload-section {
     display: flex;
     justify-content: center;
@@ -81,6 +79,7 @@ section.upload-section .upload-section-box {
     justify-content: space-between;
     align-items: center;
     min-width: 60vh;
+    max-width: 100vh;
     min-height: 50vh;
     background-color: white;
     color: #652CB3;
@@ -96,7 +95,12 @@ section.upload-section div.upload-section-box .upload-icon {
 }
 
 section.upload-section div.upload-section-box form#upload-form {
-    margin-left: auto;
+    text-align: center;
+}
+
+section.upload-section div.upload-section-box form#upload-form input{
+    margin-left: 6em;
+    text-align: center;
 }
 
 section.upload-section button#upload-button {
