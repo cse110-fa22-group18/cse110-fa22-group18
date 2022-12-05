@@ -4,19 +4,23 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Triggers the workflow on push or pull request events but only for the "main" and "develop" branches
   push:
-    branches: [ "main", "develop" ]
+    branches:
+      - 'main'
+      - 'develop'
   pull_request:
-    branches: [ "main", "develop" ]
+    branches:
+      - 'main'
+      - 'develop'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  # This workflow contains the jobs "Tests" and "Lint-document"
+  Tests:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -28,15 +32,28 @@ jobs:
       # Install packages needed
       - name: Install packages
         run: npm i
+
+      # Run all jest and puppeteer tests
+      - name: Run tests
+        run: npm test
+      
+  # If the tests pass and the branch is develop or main, lint and document
+  Lint-document:
+    runs-on: ubuntu-latest
+    needs: Tests
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      # Install packages needed
+      - name: Install packages
+        run: npm i
         
       # Run ESLint and fix all fixable problems
       - name: Run ESLint
         run: npm run lint -- --fix
         
-      # Run all jest and puppeteer tests
-      - name: Run tests
-        run: npm test
-
       # Use JSDocs to create documentation in the ./documentation directory of all the *.js files
       - name: Generate Documentation
         uses: andstor/jsdoc-action@v1.2.1
