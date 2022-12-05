@@ -18,5 +18,5 @@ module.exports = {
     'no-alert': 'off',
     'import/extensions': 'off',
   },
-  ignorePatterns: ['source/assets/tests/*', 'documentation/*'],
+  ignorePatterns: ['source/assets/tests/*', 'source/Exploratory-Code/*', 'documentation/*'],
 };
