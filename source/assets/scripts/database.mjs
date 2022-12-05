@@ -52,7 +52,7 @@ export async function addImage(newImg){
         request.onerror = async(event) => { //name found in db
             newImg.name += "(copy)";
             await addImage(newImg);
-            document.location.reload();
+            await document.location.reload();
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
