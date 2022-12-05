@@ -41,29 +41,41 @@
 
 ## Week Nine 11/21 - 11/27
 
-- [ ] implement JSDocs or Climate for documentation
-- [ ] brightness function done and is functional within the edit page
-- [ ] create a unit test for the upload image feature
-- [ ] work with frontend and backend devs to display the image when editing
-- [ ] create a unit test for displaying images in the gallery
-- [ ] create a unit test for displaying images in the editing page
-- [ ] create a unit test for correct saving of edited image to local storage
-- [ ] create a unit test for correct deletion of image from local storage and from the gallery
-- [ ] html layout finished, on both gallery and edit
-- [ ] working prototype with barebones features
-- [ ] Brightness editing
-- [ ] adding stretch features
-- [ ] add user stories and other needed elements to the repository
-- [ ] run sprint meeting
-- [ ] run retrospective meeting
+- [x] brightness function done and is functional within the edit page
+- [x] work with frontend and backend devs to display the image when editing
+- [x] create end 2 end tests for displaying images in the gallery
+- [x] create end 2 end tests for deleting images in the gallery
+- [x] create end 2 end tests for uploading images to the gallery
+- [x] create end 2 end tests for correct image rotation
+- [x] create end 2 end tests for page navigation
+- [x] html layout finished, on both gallery and edit
+- [x] working prototype with barebones features
+- [x] Brightness editing (got rotate function working)
+- [x] create a functional save button
+- [x] start creating index.db implementation
+- [x] merge develop into main after thorough checks
+- [x] remove no longer needed branches
+- [x] resolve github issues accordingly
+- [x] deploy web app on github
+- [x] adding stretch features
+- [x] run sprint meeting
+- [x] run retrospective meeting
+- [x] familiarize ourselves with JSDocs
+- [x] we made the gallery responsive
+- [x] we styled the edit page with the features
 
 ## Week Ten 11/28 - 12/04
 
 - [ ] Testing/CI all complete
+- [x] finalize JSDocs for documentation
+- [x] create end 2 end tests for brightness
+- [ ] create unit tests for non-event listener functions
+- [ ] revamp the completed end 2 end test when index.db is finished
+- [x] add user stories and other needed elements to the repository
 - [ ] Repository fully complete
 - [ ] All Github Issues resolved
-- [ ] run sprint meeting
-- [ ] run retrospective meeting
+- [x] run sprint meeting
+- [x] run retrospective meeting
 
 ## Week Eleven 12/05 - 12/11
 

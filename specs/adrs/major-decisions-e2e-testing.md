@@ -12,11 +12,11 @@ How should we test our code? Specifically, how can we automate our testing to re
 - We want to maximize efficiency in testing
 
 ## Considered Options
-- Puppeteer
-- JQuery
+- Puppeteer (w/ Node JS)
+- JQuery (w/ Node JS)
 
 ## Decision Outcome
-Chosen option and reason: Puppeteer because of its introduction through the lab
+Chosen option and reason: Puppeteer because of its introduction through the lab. Node JS will enable file system manipulation to better replicate the user workflow of uploding local files.
 
 ### Positive Consequences <!-- optional -->
 - Automated upload and display testing to be used in the development pipeline

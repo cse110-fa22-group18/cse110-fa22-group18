@@ -1,4 +1,3 @@
-
 /* Edit navigation bar*/
 header h1 {
     color: #652CB3;
@@ -97,7 +96,6 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
     opacity: .5;
     transition: .2s;
 }
-
 
 /* Edit Section Image Container */
 section.edit-section div.image-container {
