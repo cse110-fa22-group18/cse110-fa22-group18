@@ -75,7 +75,7 @@ jobs:
       - name: Commit Changes
         run: |
           git config --global user.name 'BOT'
-          git config --global user.email 'mchera24@users.noreply.github.com'
+          git config --global user.email 'BOT@users.noreply.github.com'
           git add ./documentation/*
           git commit -am "Automated documentation and ESLint fixing"
           git push
