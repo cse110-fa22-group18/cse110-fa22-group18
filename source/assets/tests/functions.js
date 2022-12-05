@@ -7,6 +7,12 @@
    * the image is updated to reflect the changes.
    * @function rotate
    */
+
+ let canvas;
+ let context;
+ let cw;
+ let ch;
+ let image
  module.exports = { rotate,setBrightness };
  function rotate(myImage){
     myImage.onload = function () {
