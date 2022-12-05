@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     
     # Do not run this if the bot triggers the commit
-    if: ${{ github.actor	}} != 'BOT'
+    if: ${{ github.actor	}} != 'Wiztim'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
