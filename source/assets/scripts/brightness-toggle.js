@@ -3,13 +3,12 @@
  * again then the button dissapears.
  * @module
  */
- function init() {
-    const brightnessButton = document.getElementsByClassName('brightness-button')[0];
-    const brightnessBar = document.getElementsByClassName('container')[0];
-    brightnessButton.addEventListener('click', () => {
-      brightnessBar.classList.toggle('active');
-    });
-  }
-  
-  window.addEventListener('DOMContentLoaded', init);
-  
+function init() {
+  const brightnessButton = document.getElementsByClassName('brightness-button')[0];
+  const brightnessBar = document.getElementsByClassName('container')[0];
+  brightnessButton.addEventListener('click', () => {
+    brightnessBar.classList.toggle('active');
+  });
+}
+
+window.addEventListener('DOMContentLoaded', init);
