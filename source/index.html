@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./assets/scripts/upload.js"></script>
-    <script src="./assets/scripts/display.js"></script>
-    <script src="./assets/scripts/redirect.js"></script>
+    <script type="module" src="./assets/scripts/upload.js"></script>
+    <script type="module" src="./assets/scripts/display.js"></script>
+    <script type="module" src="./assets/scripts/redirect.js"></script>
+    <script type="module" src="./assets/scripts/nav-toggle.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This is for styling from main.css for this index.html -->
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <!-- This is for the favicon icon -->
     <link rel = "icon" type = "image/png" href = "./assets/images/logo.png">
     <title>Eighteam Photoshop</title>
 </head>
@@ -22,6 +21,13 @@
                 <h1 class = "team-name" id="team-name">Eighteam Photoshop</h1>
             </a>
         </div>
+
+        <a href="javascript:void(0);" class="nav-toggle" id="navtoggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
         <nav class = "main-nav">
             <ul class ="nav-links">
                 <li><a href="#upload-section" id="red-upload"><b>Upload Picture</b></a></li>
@@ -49,14 +55,8 @@
 
     <section class = "gallery-section" id = "gallery-section">
         <h1>Gallery</h1>
-        <!-- <div id = 'pictures'> -->
-        <!-- <div id = 'row'>
-            <div id = 'column'> -->
                 <div id="gallery-container">
-
                 </div>
-            <!-- </div> -->
-        <!-- </div> -->
     </section>
 
     <section class = "footer-section" id = "footer-section">

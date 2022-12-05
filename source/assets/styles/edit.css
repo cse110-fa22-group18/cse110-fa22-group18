@@ -1,44 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-* {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
-
-
-header .team-brand .edit-label {
-    justify-content: center;
-
-}
-
-
+/* Edit navigation bar*/
 header h1 {
     color: #652CB3;
 }
 
 header a {
     cursor: pointer;
-
 }
 
-
+/*Smaller screen responsiveness */
+@media (max-width:700px) {
+    header h1.edit-label {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 /* Edit section */
-
-
-
 section.edit-section {
     
     display: grid;
-    grid-template-columns: minmax(1cm,3cm) 2fr;
+    grid-template-columns: 2cm 2fr;
+    grid-template-rows: 100%;
     background-color: #E2D1FD;
     height: 90vh;
 }
 
+
+/* Edit Section Feature Bar */
 section.edit-section .feature-bar {
     background-color: white;
 
@@ -59,9 +48,7 @@ section.edit-section .feature-bar .feature-bar-content {
     justify-content: space-evenly; 
     align-items: center;
     height: 100%;
-
-
-    /* object-fit: cover; */
+    width: 10fr;
 }
 
 section.edit-section .feature-bar .feature-bar-content button{
@@ -110,22 +97,18 @@ section.edit-section .feature-bar .feature-bar-content .brightness-button img:ho
     transition: .2s;
 }
 
-
-
-
-
-
-section.edit-section .image-container {
+/* Edit Section Image Container */
+section.edit-section div.image-container {
     border-style: solid;
-    object-fit: scale-down;
+    border-color: #E2D1FD;
+    object-fit: contain;
 
-    margin-right: .5%;
-    margin-top: .5%;
-    margin-bottom: .5%;
-
-    /* margin-bottom: 10%; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
 /* get rid of duplicate image in canvas since it displays both image container and canvas */
@@ -134,21 +117,67 @@ section.edit-section #canvas {
 }
  
 
-
- section.edit-section div.edit img{
-    grid-column-start: 1;
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-
-    border-radius: 4px;
-    width: 35px;
+/* Edit Section Image Container Brightness Bar */
+div.container {
+    display: none;
+    position: sticky; 
+    text-align: center;
+    bottom: 0;
 }
- 
 
+div.container.active {
+    display: grid;
+    margin-left: 10%;
+}
 
+div.container div.brightness-box label {
+    font-family: "Copperplate", Times, serif;
+}
+
+div.container div.brightness-box img.low-bright {
+    width: 1cm;
+    height: 1cm;
+    background: no-repeat scroll 0 0 transparent;
+}
+
+div.container div.brightness-box img.high-bright {
+    width: 1cm;
+    height: 1cm;
+    background: no-repeat scroll 0 0 transparent;
+}
+
+/* Slider style */
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 40%;
+    background: no-repeat scroll 0 0 transparent;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #3071A9;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
+  
  /* Gallery title styling */
  section.edit-section > h1 {
      color: #652CB3;
