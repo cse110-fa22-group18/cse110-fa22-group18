@@ -114,7 +114,7 @@ export async function putImage(newImg){
  * @returns Promise, resolves when all entries in DB have been added. 
  * through the promise, returns array of all image objects
  */
-export async function output_image_list(){
+export async function outputImageList(){
     return new Promise(
         function(resolve, reject) {
         var objectStore = getObjectStore(DB_STORE_NAME, 'readwrite');
