@@ -65,8 +65,8 @@ jobs:
       # Commits the changes made by ESLint and JSDocs
       - name: Commit Changes
         run: |
-          git config --global user.name 'Timothy Orlov'
-          git config --global user.email 'wiztim@users.noreply.github.com'
+          git config --global user.name 'Mandeep Chera'
+          git config --global user.email 'mchera24@users.noreply.github.com'
           git add ./documentation/*
           git commit --no-verify -am "Automated documentation and ESLint fixing"
           git push --no-verify
