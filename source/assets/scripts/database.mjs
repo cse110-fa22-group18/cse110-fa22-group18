@@ -49,9 +49,10 @@ export async function addImage(newImg){
         const tx = db.transaction(DB_STORE_NAME, 'readwrite');
         const imageStore = tx.objectStore(DB_STORE_NAME); 
         const request = imageStore.add(newImg);
-        request.onerror = (event) => { //name found in db
+        request.onerror = async(event) => { //name found in db
             newImg.name += "(copy)";
-            addImage(newImg);
+            await addImage(newImg);
+            document.location.reload();
         };
         request.onsuccess = (event) => {
             console.log(newImg.name + " added to db");
