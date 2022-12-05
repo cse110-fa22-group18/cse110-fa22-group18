@@ -45,6 +45,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.BUILD_SVC_PAT }}
       
       # Install packages needed
       - name: Install packages
@@ -68,5 +70,5 @@ jobs:
           git config --global user.name 'Mandeep Chera'
           git config --global user.email 'mchera24@users.noreply.github.com'
           git add ./documentation/*
-          git commit --no-verify -am "Automated documentation and ESLint fixing"
-          git push --no-verify
+          git commit -am "Automated documentation and ESLint fixing"
+          git push
