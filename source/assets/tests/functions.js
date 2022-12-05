@@ -27,7 +27,6 @@ function rotate(myImage) {
     context.rotate(Math.PI / 2);
     context.drawImage(myImage, 0, 0);
     image.src = canvas.toDataURL('image/png');
-    myImage = image;
   }
 }
 /**
@@ -44,7 +43,6 @@ function setBrightness(myImage) {
     context.filter = brightnessStart + inputValue + brightnessEnd;
     context.drawImage(myImage, 0, 0);
     image.src = canvas.toDataURL('image/png');
-    myImage = image;
   }
 }
 
