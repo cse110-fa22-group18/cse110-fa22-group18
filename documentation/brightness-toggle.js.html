@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: nav-toggle.js</title>
+    <title>JSDoc: Source: brightness-toggle.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: nav-toggle.js</h1>
+    <h1 class="page-title">Source: brightness-toggle.js</h1>
 
     
 
@@ -27,15 +27,15 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * For smaller screen sizes, navigation bar turns into a toggle button which will display
- * navigation bar options when clicked.
+ * When brightness button is clicked, the brightness bar will appear. If the user clicks the button
+ * again then the button dissapears.
  * @module
  */
 function init() {
-  const navToggle = document.getElementsByClassName('nav-toggle')[0];
-  const navLinks = document.getElementsByClassName('nav-links')[0];
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  const brightnessButton = document.getElementsByClassName('brightness-button')[0];
+  const brightnessBar = document.getElementsByClassName('container')[0];
+  brightnessButton.addEventListener('click', () => {
+    brightnessBar.classList.toggle('active');
   });
 }
 

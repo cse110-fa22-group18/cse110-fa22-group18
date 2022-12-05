@@ -185,15 +185,21 @@ section.gallery-section > h1 {
     justify-content: center;
 }
 
+#gallery-container a {
+    margin: 2.5em;
+    padding: 2.5em;
+}
+
 #gallery-container img
 {
-    height: 33vh;
-    width: 33vh;
-    padding: 5%;
-    margin: 5%;
+    min-height: 20vh;
+    min-width: 20vh;
+    max-width: 85vh;
+    max-height: 30vh;
+    margin: 0px;
+    padding: 0%;
     vertical-align: middle;
     border-radius: 50px;
-    background: url("./assets/images/no-image.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
 
 }
