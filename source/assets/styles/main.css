@@ -192,10 +192,10 @@ section.gallery-section > h1 {
 
 #gallery-container img
 {
-    min-height: 33vh;
-    min-width: 33vh;
+    min-height: 20vh;
+    min-width: 20vh;
     max-width: 85vh;
-    max-height: 100vh;
+    max-height: 30vh;
     margin: 0px;
     padding: 0%;
     vertical-align: middle;
