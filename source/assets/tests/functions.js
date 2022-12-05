@@ -12,7 +12,10 @@
  let context;
  let cw;
  let ch;
- let image
+ let image;
+ let myImage;
+ let brightnessStart;
+ let brightnessEnd;
  module.exports = { rotate,setBrightness };
  function rotate(myImage){
     myImage.onload = function () {
