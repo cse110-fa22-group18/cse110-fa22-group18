@@ -17,7 +17,7 @@
  let brightnessEnd;
  
  function rotate(myImage) {
-   myImage.onload = function r1 () {
+   myImage.onload = function r1 (myImage) {
      canvas.width = myImage.height;
      canvas.height = myImage.width;
      cw = canvas.width;
@@ -38,7 +38,7 @@
  function setBrightness(myImage) {
    //myImage = new Image();
    //myImage.src = image.src;
-   myImage.onload = function b1 (inputValue) {
+   myImage.onload = function b1 (inputValue,myImage) {
      canvas.width = myImage.width;
      canvas.height = myImage.height;
      context.filter = brightnessStart + inputValue + brightnessEnd;
