@@ -23,9 +23,6 @@ jobs:
   Tests:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-    # Do not run this if the bot triggers the commit
-    if: ${{ github.actor	}} != 'Wiztim'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -77,5 +74,5 @@ jobs:
           git config --global user.name 'BOT'
           git config --global user.email 'BOT@users.noreply.github.com'
           git add ./documentation/*
-          git commit -am "Automated documentation and ESLint fixing"
+          git commit -am "Automated documentation and ESLint fixing [skip ci]"
           git push
