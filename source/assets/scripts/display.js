@@ -46,6 +46,8 @@ async function init() {
         if (askUser == '1' || askUser.toLowerCase() == 'edit') {
           // get the current page URL
           let currentURL = document.URL;
+          currentURL = currentURL.replace('#gallery-section', '');
+          currentURL = currentURL.replace('#upload-section', '');
           // remove index.html from url
           currentURL = currentURL.replace('index.html', '');
           // add in edit.html at the end to change link
