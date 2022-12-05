@@ -13,7 +13,6 @@ let context;
 let cw;
 let ch;
 let image;
-let myImage;
 let brightnessStart;
 let brightnessEnd;
 
