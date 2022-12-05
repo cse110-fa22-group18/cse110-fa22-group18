@@ -69,4 +69,4 @@ jobs:
           git config --global user.email 'wiztim@users.noreply.github.com'
           git add ./documentation/*
           git commit --no-verify -am "Automated documentation and ESLint fixing"
-          git push    
+          git push --no-verify
