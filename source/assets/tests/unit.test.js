@@ -13,7 +13,7 @@ test('image correctly rotated', () => {
     expect(functions.rotate(image)).toBe(undefined);
 });
 test('rotate will not modify image path',()=>{
-    //setBringhtness will not modify imagepath
+    //rotate will not modify imagepath
     functions.rotate(image);
     const imagePath="./source/assets/test-images/elden_ring.jpeg";
     expect(image).toBe(imagePath);
