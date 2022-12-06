@@ -15,7 +15,7 @@ describe("Display functionality tests", () => {
         await page.goto("https://cse110-fa22-group18.github.io/cse110-fa22-group18/source/index.html");
     });
 
-    it("image is properly rotated", async () => {
+    it("Image is properly rotated", async () => {
         console.log("Uploading image(s) to gallery from " + imgDir);
         const directory = fs.opendirSync(imgDir);
         try {

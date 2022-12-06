@@ -11,7 +11,7 @@
  const puppeteer = require("puppeteer");
  const fs = require("fs");
  const imgDir = "./source/assets/test-images/";
-describe('Brightness functionality tests', () => {
+describe("Brightness functionality tests", () => {
     // First, visit the index.html
     beforeAll(async () => {
       await page.goto("https://cse110-fa22-group18.github.io/cse110-fa22-group18/source/index.html");
