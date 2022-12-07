@@ -2,6 +2,8 @@
 
 **[Team Page](admin/team.md)**
 
+**[Team Eighteam Photoshop](https://cse110-fa22-group18.github.io/cse110-fa22-group18/source/index.html)**
+
 **Project Description:** Our team is working on creating a fully local first online photoshop web application. At the starting page, users have the ability to upload files from their local device, which is saved to local storage, and view, delete, or download past photos they have uploaded/edited. If they choose to edit a photo, users can change the brightness, the rotation, and crop size of the photo selected. From this point, the user is redirected back to the gallery page which allows them to download, view, or delete the edited photo. 
 
 **Motivation/Statement of Purpose:** Sometimes we need something a little different from what our raw photos can provide. Or, our pictures don't look quite right. So, we will create a way to quickly edit it digitally! Downloading a dedicated application for editing pictures can be a drag, but with this local first CRUD web application, you can quickly upload a photo, make the edits you desire with simplicity, and download them to your local device. If you have multiple picutres you need to edit you can view and download them at your convenience in the gallery section of the web app.
@@ -13,4 +15,8 @@
 **Read:** You read the photos saved in local storage when you display, download, and delete them.\
 **Update:** You have the ability to both edit new photos and re-edit past photos.\
 **Delete:** Users have the ability to delete past edited photos within the gallery page.
+
+# Documentation via JSDocs
+
+https://cse110-fa22-group18.github.io/cse110-fa22-group18/documentation/index.html
 
