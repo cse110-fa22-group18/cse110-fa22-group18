@@ -26,7 +26,7 @@ challenges you faced, what things you felt you overcame and anything you feel yo
  - Hariz - Task Breakdown - Better communication on who is doing what and what their deadlines are. We got the hang of it later on but in the beginning
     we lacked direction and peopled didn't always know what to work on. It got better as we started to use github issues more. We need to divide tasks into
     more bite sized chunks.
-  - Hariz - More communication of changes that can affect others - notes in PR, messages in slack. As we started making more frequent PRs, people better 
+  - Jiayi - More communication of changes that can affect others - notes in PR, messages in slack. As we started making more frequent PRs, people better 
     communicated chagnes that could affect others. 
     
    
