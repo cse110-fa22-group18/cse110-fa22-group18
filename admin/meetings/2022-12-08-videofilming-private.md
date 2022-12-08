@@ -28,13 +28,12 @@
 	-Managing the styles of coding of each individual within both frontend and backend was a challenge as incremental changes require massive changes in structure
 	-Styling was difficult because some people would use a grid box and others would use a flex box, and so this would result in revamping the code to synchronize with the rest. An example of this would be the brightness bar, which required frontend to change both the html and the css because of the way backend did it (image container was connected to javascript)
 	-We would have saved a lot of time if there was more commenting on certain parts of the html and JS functions
-	-Don't wait too long to PR - creates a lot of merge conflicts because the parent branch is far ahead of the feature branch. Also waiting longer means more code to review.
 	
 ### what challenges and victories the team faced part 2 Mandeep (2:00)
 	  -More foresight in backend design - more classes, more functions, more modular. In our code, our actual scripts were longer than expected and more modular code could have been easier to read, edit, and test. This made it a little difficult to change the code from localStorage to indexedDB , classes and functions in module files could have made it easier.
 	  -Better communication on who is doing what and what their deadlines are. We got the hang of it later on but in the beginning we lacked direction and people didn't always know what to work on. It got better as we started to use github issues more. We need to divide tasks into more bite sized chunks.
-	  -More communication of changes that can affect others - notes in PR, messages in slack. As we started making more frequent PRs, people better communicated changes that could affect others.
-	  -Project was completed on time with everything working perfectly
+	  -Don't wait too long to PR - creates a lot of merge conflicts because the parent branch is far ahead of the feature branch. Also waiting longer means more code to review. More communication of changes that can affect others - notes in PR, messages in slack. As we started making more frequent PRs, people better communicated changes that could affect others.
+	  -Project was completed on time with everything working as intended
 	  -Front-end completed their work efficiently allowing for quick changes if needed
 	  -Did a great job in managing branches, well described pull requests (creating a template), and issues throughout the entirety of the project
 	  -Testing was completed effectively, especially when we made our big switch to index.db from local storage
