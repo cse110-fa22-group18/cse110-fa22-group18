@@ -1,16 +1,24 @@
 # public video
 ## Intro Team - Danny
 ## Introduce yourselves
-Name, frontend backend testing
- - Danny
- - Daniel
+
+Leads
  - Mandeep
- - Ira
- - Hariz
+ - Daniel
+ 
+Backend
  - Jiayi
- - Nathan
- - Tim
  - Yiyu
+ - Nathan
+ 
+Frontend
+ - Danny
+ - Hariz
+
+CI, CD, Testing
+ - Ira
+ - Tim
+
 
 ## Product Demo
 Daniel - Upload
