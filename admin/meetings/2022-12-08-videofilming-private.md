@@ -41,7 +41,7 @@
 	  -The pipeline was built with precision and worked extremely well with the linter checking our code, running tests, and documenting via JSDocs
 	  -Back-end did a great job in creating functions effectively and efficiently so that it could be applied back to the front-end and testing
 
-# Conclusion with discussion of what things a team taking on your project should do next (discuss features not built yet, improvements to the build pipeline or anything else you would have gotten given another quarter worth of work) JIAYI (< 1 min if possible)
+### Conclusion with discussion of what things a team taking on your project should do next (discuss features not built yet, improvements to the build pipeline or anything else you would have gotten given another quarter worth of work) JIAYI (< 1 min if possible)
 	-Implemented more stretch features such as drawing, multiple image upload, clear gallery button, adding shapes to images, more file type support, user login to save images to accounts, and cropping images
 	-Could have made a mobile version of the web app (more responsive), made more polished animations, design the web app with more complexity, make the display after edits run faster with canvas
 	-For the pipeline we could add a code quality checker and more testing
