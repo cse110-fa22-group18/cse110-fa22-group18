@@ -20,3 +20,6 @@
 
 https://cse110-fa22-group18.github.io/cse110-fa22-group18/documentation/index.html
 
+# Team Recap Video
+https://youtu.be/NC0lBxBWfRE
+
