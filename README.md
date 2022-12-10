@@ -20,6 +20,9 @@
 
 https://cse110-fa22-group18.github.io/cse110-fa22-group18/documentation/index.html
 
-# Team Recap Video
+# Final Project Public Video
 https://youtu.be/NC0lBxBWfRE
+
+# Final Project Private Video
+https://youtu.be/cE0F6uOwTCw
 
